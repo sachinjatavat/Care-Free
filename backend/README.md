@@ -1,6 +1,8 @@
 # CareFlow — Smart Hospital Bed Allocation System (Backend)
 
 > **Created by Sachin Jatavat, Krishna Khandelwal, Priyanshi Jaiswal**
+> 
+> 🌐 **Live Website**: [https://care-flow-shp.netlify.app/](https://care-flow-shp.netlify.app/)
 
 CareFlow is an event-driven clinical command center backend for hospital bed allocation under severe capacity constraints.
 
