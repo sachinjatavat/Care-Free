@@ -83,7 +83,7 @@ Care free/
 │       ├── test_metrics.py                   # Metric formula verification tests
 │       ├── test_policy.py                    # Online allocation policy unit tests
 │       └── test_simulator.py                 # Discrete-event simulator repeatability tests
-└── stitch_careflow_bed_allocation_system/    # UI mockups and design references
+└── bed_allocation_system/                   # UI mockups and design references
 ```
 
 ---
