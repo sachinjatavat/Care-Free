@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#615a5c", "surface-container-high": "#eae7e7", "surface-container-low": "#f6f3f2", "on-surface-variant": "#574144", "surface-bright": "#fcf9f8", "on-primary": "#ffffff", "inverse-surface": "#303030", "error-container": "#ffdad6", "tertiary-fixed-dim": "#cdc4c6", "on-tertiary-fixed": "#1f1a1c", "inverse-primary": "#ffb2be", "surface": "#fcf9f8", "primary-fixed-dim": "#ffb2be", "secondary-container": "#fd6f8e", "primary": "#a92a4d", "primary-container": "#ca4465", "surface-dim": "#dcd9d9", "on-secondary-fixed": "#400014", "error": "#ba1a1a", "on-tertiary-container": "#fffbff", "on-primary-fixed-variant": "#8c1039", "on-tertiary": "#ffffff", "surface-container-highest": "#e4e2e1", "on-error-container": "#93000a", "on-error": "#ffffff", "on-secondary": "#ffffff", "tertiary-fixed": "#eae0e2", "on-secondary-fixed-variant": "#8a153a", "background": "#fcf9f8", "on-primary-container": "#fffbff", "inverse-on-surface": "#f3f0ef", "surface-tint": "#ac2d50", "surface-container": "#f0eded", "secondary": "#aa3050", "on-background": "#1b1c1c", "on-surface": "#1b1c1c", "outline-variant": "#debfc2", "on-primary-fixed": "#400014", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffd9de", "surface-variant": "#e4e2e1", "tertiary-container": "#7a7375", "on-secondary-container": "#6f0029", "primary-fixed": "#ffd9de", "on-tertiary-fixed-variant": "#4b4547", "outline": "#8b7174", "secondary-fixed-dim": "#ffb2be" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-md": "0.75rem", "margin": "1rem", "space-xl": "1.5rem", "gutter": "0.75rem", "space-sm": "0.375rem", "margin-panel": "0.75rem", "space-lg": "1rem", "gutter-compact": "0.5rem" }, "fontFamily": { "body-sm": ["Inter"], "headline-sm": ["Inter"], "label-sm": ["Inter"], "metric-tabular": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "metric-tabular": ["14px", { "lineHeight": "18px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-14 px-margin flex items-center gap-space-md bg-surface-container-lowest"><div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">local_hospital</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">CareFlow</span><span class="font-label-sm text-label-sm text-outline truncate uppercase">Smart Allocation</span></div></div><div class="px-space-md py-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Clinical Navigation</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-bold rounded-xl"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-secondary-fixed text-on-secondary-fixed font-bold rounded-xl" data-path="bed-allocation-overview" href="#"><span class="material-symbols-outlined text-[18px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="waiting-patients" href="#"><span class="material-symbols-outlined text-[18px]">person_search</span><span>Waiting Patients</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="bed-capacity" href="#"><span class="material-symbols-outlined text-[18px]">hotel</span><span>Bed Capacity</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="hackathon-simulator" href="#"><span class="material-symbols-outlined text-[18px]">neurology</span><span>Simulation</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="scoring-and-judging-metrics" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span>Analytics</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="decision-log" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Decision Log</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low mx-space-md mb-margin rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-tertiary uppercase">System Status</span><span class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#065F46] opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-[#065F46]"></span></span>Simulator Ready</span></div><div class="flex flex-col pt-space-xs"><span class="font-label-sm text-label-sm text-tertiary uppercase">Shift / Duty Role</span><span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Nurse Supervisor / Triage</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">CareFlow</span><span class="text-outline font-body-sm text-body-sm hidden lg:inline">–</span><span class="font-body-md text-body-md text-on-surface-variant hidden lg:inline">Hospital Bed Allocation System</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-primary text-[16px]">notifications_active</span><span class="font-label-sm text-label-sm text-primary font-semibold">ICU Bottleneck: 2 Urgent Transfers Pending</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Demo Mode</span><button aria-checked="true" class="relative inline-flex h-4 w-8 flex-shrink-0 cursor-pointer rounded-full bg-primary transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button"><span class="translate-x-4 inline-block h-3 w-3 mt-0.5 ml-0.5 transform rounded-full bg-on-primary transition duration-200 ease-in-out"></span></button></div><button class="flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[16px]">bolt</span><span>Run Live Allocation</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface">Dr. Sarah Lin</span><span class="font-label-sm text-label-sm text-outline">Triage Operations</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-14 w-full bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- PAGE HEADER -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Waiting Patients</h1>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded">Triage Live Census</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live patient priority queue evaluated against real-time clinical bed compatibility</p>
+</div>
+<div class="flex items-center gap-space-md flex-wrap">
+<!-- Simulation cycle ticker -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded shadow-sm">
+<span class="material-symbols-outlined text-primary text-[16px] animate-spin" style="animation-duration: 6s;">sync</span>
+<span class="font-label-sm text-label-sm text-tertiary">EVAL CYCLE:</span>
+<span class="font-metric-tabular text-metric-tabular text-on-surface" id="cycle-ticker">00:14s</span>
+</div>
+<!-- Demo Mode Toggle -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Auto-Ingest</span>
+<button aria-checked="true" class="relative inline-flex h-4 w-8 flex-shrink-0 cursor-pointer rounded-full bg-primary transition-colors focus:outline-none" id="auto-ingest-toggle" role="switch" type="button">
+<span class="translate-x-4 inline-block h-3 w-3 mt-0.5 ml-0.5 transform rounded-full bg-on-primary transition duration-200" id="auto-ingest-ball"></span>
+</button>
+</div>
+<!-- Simulate Arrival Button -->
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-sm rounded font-label-md text-label-md shadow-sm transition-colors" id="btn-open-simulate-modal" type="button">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+<span>+ Simulate Arrival</span>
+</button>
+</div>
+</div>
+<!-- TOP SUMMARY (4 Compact KPI Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-lg">
+<!-- KPI 1: Waiting -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Waiting Queue</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="kpi-total-waiting">7</span>
+<span class="font-body-sm text-body-sm text-tertiary">active</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Awaiting ward assignment</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<!-- KPI 2: Critical Waiting -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Critical Waiting</span>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="kpi-critical-waiting">1</span>
+<span class="font-body-sm text-body-sm text-primary font-medium">Level 3 patients</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High-acuity priority</span>
+</div>
+<div class="w-10 h-10 rounded bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">e911_emergency</span>
+</div>
+</div>
+<!-- KPI 3: Longest Wait -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Longest Wait</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="kpi-longest-wait">192 min</span>
+<span class="font-body-sm text-body-sm text-tertiary">in queue</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Excluding completed transfers</span>
+</div>
+<div class="w-10 h-10 rounded bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">timer</span>
+</div>
+</div>
+<!-- KPI 4: Near Rejection SLA -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider font-semibold">Near SLA Rejection</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-error font-bold" id="kpi-near-rejection">1</span>
+<span class="font-body-sm text-body-sm text-error font-medium">&gt; 180 min wait</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">240m SLA threshold cutoff</span>
+</div>
+<div class="w-10 h-10 rounded bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+</div>
+</div>
+<!-- PRIORITY SCORE FORMULA CALLOUT BANNER -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-7 h-7 rounded bg-primary-fixed flex-shrink-0 flex items-center justify-center text-primary mt-0.5">
+<span class="material-symbols-outlined text-[18px]">functions</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-md flex-wrap">
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wide">Dynamic Allocation Math</span>
+<span class="bg-surface-container-high px-space-xs py-0.5 rounded font-metric-tabular text-body-sm text-on-surface">Priority Score = Acuity Weight × Waiting Time (min)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<strong>Weights:</strong> L1 Standard = <strong>1</strong> • L2 Urgent = <strong>3</strong> • L3 Critical = <strong>8</strong>.
+            <em>Example:</em> Level 3 patient waiting 18 min → 8 × 18 = <strong>144</strong>. High scores bypass queue chronological order while preserving bed capability downward compatibility.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-md flex-shrink-0 bg-surface-container-low px-space-md py-space-xs rounded">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Critical Beds: <strong id="live-crit-beds">2 Avail</strong></span>
+</div>
+<div class="w-px h-4 bg-surface-container-high"></div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Monitored: <strong id="live-mon-beds">4 Avail</strong></span>
+</div>
+<div class="w-px h-4 bg-surface-container-high"></div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">General: <strong id="live-gen-beds">9 Avail</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- QUEUE CONTROLS & TOOLBAR -->
+<div class="bg-surface-container-lowest rounded p-space-md shadow-sm mb-gutter flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Left: Search & Filter Chips -->
+<div class="flex items-center gap-space-md flex-wrap">
+<!-- Search Input -->
+<div class="relative min-w-[200px] max-w-xs">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-tertiary text-[18px]">search</span>
+<input class="w-full pl-8 pr- space-xs py-1.5 h-8 bg-surface text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="queue-search" placeholder="Search Patient ID..." type="text"/>
+</div>
+<!-- Acuity Filter Chips -->
+<div class="flex items-center gap-1 bg-surface-container-low p-0.5 rounded">
+<button class="filter-acuity-btn px- space-md py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary transition-all" data-filter-acuity="ALL" type="button">All</button>
+<button class="filter-acuity-btn px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all" data-filter-acuity="1" type="button">L1 Standard</button>
+<button class="filter-acuity-btn px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all" data-filter-acuity="2" type="button">L2 Urgent</button>
+<button class="filter-acuity-btn px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all" data-filter-acuity="3" type="button">L3 Critical</button>
+</div>
+<!-- Status Filter -->
+<div class="flex items-center gap-1 bg-surface-container-low p-0.5 rounded">
+<button class="filter-status-btn px-space-md py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary transition-all" data-filter-status="ACTIVE" type="button">Active Waiting</button>
+<button class="filter-status-btn px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all" data-filter-status="NEAR_REJECT" type="button">&gt;180m Warning</button>
+<button class="filter-status-btn px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all" data-filter-status="ALL" type="button">Show Rejected</button>
+</div>
+</div>
+<!-- Right: Sorting -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<span class="font-label-sm text-label-sm text-tertiary">Sort:</span>
+<select class="h-8 bg-surface text-on-surface font-label-sm text-label-sm px-space-md py-1 rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-sm cursor-pointer" id="queue-sort">
+<option value="score_desc">Priority Score (↓ Highest First)</option>
+<option value="wait_desc">Waiting Time (↓ Longest First)</option>
+<option value="acuity_desc">Acuity Weight (↓ Critical First)</option>
+<option value="time_asc">Arrival Time (↑ First In)</option>
+</select>
+</div>
+</div>
+<!-- MAIN WAITING QUEUE TABLE -->
+<div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden mb-space-lg">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-tertiary font-label-sm text-label-sm uppercase tracking-wider h-9">
+<th class="px-space-md py-2 w-12 text-center">#</th>
+<th class="px-space-md py-2">Patient ID</th>
+<th class="px-space-md py-2">Arrival</th>
+<th class="px-space-md py-2">Acuity Tier</th>
+<th class="px-space-md py-2 text-center">Weight</th>
+<th class="px-space-md py-2 text-right">Wait Duration</th>
+<th class="px-space-md py-2">Required</th>
+<th class="px-space-md py-2 hidden xl:table-cell">Compatible Tiers</th>
+<th class="px-space-md py-2 text-right font-bold">Priority Score</th>
+<th class="px-space-md py-2">Recommended Bed</th>
+<th class="px-space-md py-2 text-right">Clinical Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm" id="queue-table-body">
+<!-- Rows will be dynamically rendered and updated by JS -->
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Empty indicator -->
+<div class="hidden p-space-xl text-center text-on-surface-variant font-body-md" id="no-results-msg">
+<span class="material-symbols-outlined text-[36px] text-tertiary mb-space-xs block">person_search</span>
+      No patients match the selected filter criteria.
+    </div>
+</div>
+<!-- BOTTOM INFORMATION BAR -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md text-tertiary">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">policy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Queue Policy:</strong> Patients evaluated dynamically upon bed turn-down. SLA threshold: <strong>240 minutes</strong> max queue time before mandatory emergency transfer. Admitted patients retain non-eviction guarantee.
+      </span>
+</div>
+<div class="flex items-center gap-space-md flex-shrink-0 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Telemetry Heartbeat: <strong class="text-on-surface">Connected (99.98%)</strong></span>
+<span class="text-on-surface-variant">HL7 / FHIR Feed: <strong class="text-on-surface">ED-SYNC-OK</strong></span>
+</div>
+</div>
+<!-- TOAST NOTIFICATION CONTAINER -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-space-sm pointer-events-none" id="toast-container"></div>
+<!-- MODAL: + SIMULATE ARRIVAL -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-50 hidden flex items-center justify-center p-space-md" id="modal-simulate">
+<div class="bg-surface-container-lowest rounded shadow-xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-150">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Simulate Emergency Arrival</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Triage Engine Intake Injector</span>
+</div>
+</div>
+<button class="text-tertiary hover:text-on-surface p-1 rounded" id="btn-close-simulate-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="p-space-lg flex flex-col gap-space-md" id="simulate-form">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase mb-1">Acuity Level &amp; Clinical Need</label>
+<select class="w-full h-9 bg-surface text-on-surface font-body-sm text-body-sm px-space-md rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="sim-acuity">
+<option data-req="Critical" data-weight="8" value="3">Level 3 — Critical (Weight: 8, Bed: Critical)</option>
+<option data-req="Monitored" data-weight="3" value="2">Level 2 — Urgent (Weight: 3, Bed: Monitored)</option>
+<option data-req="General" data-weight="1" selected="" value="1">Level 1 — Standard (Weight: 1, Bed: General)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface uppercase mb-1">Initial Waiting Elapsed (Minutes)</label>
+<input class="w-full h-9 bg-surface text-on-surface font-body-sm text-body-sm px-space-md rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="sim-wait-time" max="250" min="0" type="number" value="0"/>
+<span class="font-body-sm text-body-sm text-tertiary mt-1 block">Simulate already-waiting patients or backlogged arrivals.</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-tertiary">Computed Priority Score:</span>
+<span class="font-metric-tabular text-primary font-bold" id="sim-calc-score">1 (1 × 1m)</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-tertiary">Compatible Bed Allocation:</span>
+<span class="text-on-surface font-medium" id="sim-calc-compat">General / Monitored / Critical</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-sm rounded font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface" id="btn-cancel-simulate" type="button">Cancel</button>
+<button class="px-space-md py-space-sm rounded font-label-md text-label-md bg-primary hover:bg-primary-container text-on-primary font-medium flex items-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Inject Into Queue</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- DRAWER: ALLOCATION DECISION -->
+<div class="fixed inset-y-0 right-0 w-full sm:w-[460px] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-200 ease-in-out flex flex-col" id="drawer-allocation">
+<!-- Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">hotel</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bed Allocation Protocol</h2>
+<span class="font-label-sm text-label-sm text-tertiary">Deterministic Ward Placement</span>
+</div>
+</div>
+<button class="text-tertiary hover:text-on-surface p-1 rounded" id="btn-close-alloc-drawer">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Body -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md">
+<!-- Patient Card Banner -->
+<div class="bg-surface-container-low p-space-md rounded flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Candidate Patient</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight" id="alloc-patient-id">P-00421</h3>
+<span class="font-body-sm text-body-sm text-tertiary" id="alloc-arrival-time">Arrival: 12:42</span>
+</div>
+<div class="px-space-md py-1 rounded font-label-md text-label-md font-semibold bg-primary text-on-primary" id="alloc-acuity-badge">
+          L3 Critical
+        </div>
+</div>
+<!-- Priority Telemetry -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Wait Time</span>
+<span class="font-metric-tabular text-metric-tabular text-on-surface" id="alloc-wait-val">18 min</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Priority Score</span>
+<span class="font-metric-tabular text-metric-tabular text-primary font-bold" id="alloc-score-val">144 pts</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Required Bed</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold" id="alloc-req-bed">Critical</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Compatible Tiers</span>
+<span class="font-body-md text-body-md text-on-surface" id="alloc-compat-bed">Critical only</span>
+</div>
+</div>
+<!-- Algorithmic Decision Block -->
+<div class="bg-primary/5 rounded p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-md text-label-md text-primary font-bold uppercase">Algorithmic Placement Decision</span>
+</div>
+<div class="text-on-surface font-body-md text-body-md">
+          Assign to Target Unit: <strong class="text-primary font-bold" id="alloc-target-bed">Critical Bed C-04</strong>
+</div>
+<div class="h-px bg-outline-variant/30 my-space-xs"></div>
+<div class="flex items-start gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">shield</span>
+<span id="alloc-protection-note">
+            Specialized bed protection rule enforced: Patient assigned to nearest compatible specialized unit preserving general inventory.
+          </span>
+</div>
+</div>
+<!-- Live Bed Availability Context -->
+<div class="p-space-md bg-surface-container rounded flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Current Ward Availability Status</span>
+<div class="flex justify-between items-center text-body-sm">
+<span>Critical ICU Ward:</span>
+<span class="font-metric-tabular text-primary font-semibold">2 Available</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span>Step-down / Monitored:</span>
+<span class="font-metric-tabular text-on-surface">4 Available</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span>Med-Surg General:</span>
+<span class="font-metric-tabular text-on-surface">9 Available</span>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-space-sm rounded font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface" id="btn-cancel-alloc" type="button">
+        Cancel
+      </button>
+<button class="px-space-md py-space-sm rounded font-label-md text-label-md bg-primary hover:bg-primary-container text-on-primary font-semibold flex items-center gap-space-xs shadow-sm" id="btn-confirm-alloc" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Confirm Allocation</span>
+</button>
+</div>
+</div>
+<!-- DRAWER: PATIENT DETAIL TIMELINE -->
+<div class="fixed inset-y-0 right-0 w-full sm:w-[460px] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-200 ease-in-out flex flex-col" id="drawer-patient-detail">
+<!-- Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Clinical Patient Profile</h2>
+<span class="font-label-sm text-label-sm text-tertiary">EHR &amp; Throughput Timeline</span>
+</div>
+</div>
+<button class="text-tertiary hover:text-on-surface p-1 rounded" id="btn-close-detail-drawer">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Body -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md">
+<!-- ID and Status -->
+<div class="flex items-center justify-between p-space-md bg-surface-container rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Unique Record Identifier</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface" id="dtl-patient-id">P-00421</span>
+<span class="font-body-sm text-body-sm text-tertiary">Hospital Intake Registry</span>
+</div>
+<div class="px-space-md py-1 rounded font-label-md text-label-md font-semibold" id="dtl-acuity-tag">
+          L3 Critical
+        </div>
+</div>
+<!-- Clinical Metrics Table -->
+<div class="divide-y divide-surface-container-high bg-surface-container-low rounded overflow-hidden">
+<div class="p-space-sm flex justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Arrival Timestamp</span>
+<span class="font-metric-tabular text-body-md text-on-surface" id="dtl-arrival">12:42</span>
+</div>
+<div class="p-space-sm flex justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Acuity Weight Factor</span>
+<span class="font-metric-tabular text-body-md text-on-surface" id="dtl-weight">8</span>
+</div>
+<div class="p-space-sm flex justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Current Wait Duration</span>
+<span class="font-metric-tabular text-body-md text-on-surface" id="dtl-wait">18 min</span>
+</div>
+<div class="p-space-sm flex justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Required Bed Ward</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold" id="dtl-req-bed">Critical</span>
+</div>
+<div class="p-space-sm flex justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Compatible Bed Types</span>
+<span class="font-body-md text-body-md text-on-surface" id="dtl-compat-bed">Critical only</span>
+</div>
+<div class="p-space-sm flex justify-between bg-primary/5">
+<span class="font-label-sm text-label-sm text-primary font-bold">Dynamic Priority Score</span>
+<span class="font-metric-tabular text-body-md text-primary font-bold" id="dtl-score">144 pts</span>
+</div>
+<div class="p-space-sm flex justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Recommended Unit</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold" id="dtl-rec-bed">Critical Bed C-04</span>
+</div>
+</div>
+<!-- Timeline Component -->
+<div class="mt-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase mb-space-sm block">Throughput Trajectory</span>
+<div class="relative pl-6 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1 -->
+<div class="relative">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-on-primary text-[10px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Patient Arrived at ED Triage</span>
+<span class="font-body-sm text-body-sm text-tertiary" id="timeline-time-arrival">12:42 • Initial intake logged</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-on-primary text-[10px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Entered Bed Matching Queue</span>
+<span class="font-body-sm text-body-sm text-tertiary">Acuity assigned, priority formula activated</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-on-primary text-[10px]">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ward Capacity Compatibility Evaluated</span>
+<span class="font-body-sm text-body-sm text-tertiary">Checked against ICU, Monitored, and Med-Surg buffers</span>
+</div>
+</div>
+<!-- Step 4 (Current) -->
+<div class="relative">
+<div class="absolute -left-[23px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center text-on-primary text-[10px] animate-pulse">
+<span class="material-symbols-outlined text-[10px]">hourglass_top</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Allocation Recommendation Ready</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optimal target identified; awaiting charge nurse dispatch</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md bg-surface-container-low flex justify-end">
+<button class="px-space-md py-space-sm rounded font-label-md text-label-md bg-surface-container text-on-surface" id="btn-close-detail">Close Profile</button>
+</div>
+</div>
+<!-- BACKDROP OVERLAY FOR DRAWERS -->
+<div class="fixed inset-0 bg-inverse-surface/30 backdrop-blur-xs z-40 hidden transition-opacity" id="drawer-backdrop"></div>
+</div>
+<!-- CLIENT-SIDE APPLICATION SCRIPT -->
+<script>
+(function() {
+  // Master queue state
+  let patients = [
+    {
+      id: "P-00421",
+      arrival: "12:42",
+      acuity: 3,
+      acuityLabel: "L3 Critical",
+      weight: 8,
+      waitTime: 18,
+      required: "Critical",
+      compatible: "Critical only",
+      recommended: "Critical (Bed C-04)",
+      targetBedId: "Bed C-04",
+      status: "ACTIVE"
+    },
+    {
+      id: "P-00422",
+      arrival: "12:44",
+      acuity: 2,
+      acuityLabel: "L2 Urgent",
+      weight: 3,
+      waitTime: 16,
+      required: "Monitored",
+      compatible: "Monitored / Critical",
+      recommended: "Monitored (Bed M-08)",
+      targetBedId: "Bed M-08",
+      status: "ACTIVE"
+    },
+    {
+      id: "P-00424",
+      arrival: "12:49",
+      acuity: 2,
+      acuityLabel: "L2 Urgent",
+      weight: 3,
+      waitTime: 11,
+      required: "Monitored",
+      compatible: "Monitored / Critical",
+      recommended: "Monitored (Bed M-09)",
+      targetBedId: "Bed M-09",
+      status: "ACTIVE"
+    },
+    {
+      id: "P-00423",
+      arrival: "12:47",
+      acuity: 1,
+      acuityLabel: "L1 Standard",
+      weight: 1,
+      waitTime: 13,
+      required: "General",
+      compatible: "General / Monitored / Critical",
+      recommended: "General (Bed G-12)",
+      targetBedId: "Bed G-12",
+      status: "ACTIVE"
+    },
+    {
+      id: "P-00425",
+      arrival: "12:52",
+      acuity: 1,
+      acuityLabel: "L1 Standard",
+      weight: 1,
+      waitTime: 8,
+      required: "General",
+      compatible: "General / Monitored / Critical",
+      recommended: "General (Bed G-14)",
+      targetBedId: "Bed G-14",
+      status: "ACTIVE"
+    },
+    {
+      id: "P-00418",
+      arrival: "09:30",
+      acuity: 1,
+      acuityLabel: "L1 Standard",
+      weight: 1,
+      waitTime: 192,
+      required: "General",
+      compatible: "General / Monitored / Critical",
+      recommended: "General (Bed G-15)",
+      targetBedId: "Bed G-15",
+      status: "NEAR_REJECT"
+    },
+    {
+      id: "P-00410",
+      arrival: "08:35",
+      acuity: 1,
+      acuityLabel: "L1 Standard",
+      weight: 1,
+      waitTime: 247,
+      required: "General",
+      compatible: "General / Monitored / Critical",
+      recommended: "None - Outbound Transfer",
+      targetBedId: null,
+      status: "REJECTED"
+    }
+  ];
+
+  // Ward Capacity Counts
+  let wardBeds = {
+    critical: 2,
+    monitored: 4,
+    general: 9
+  };
+
+  // Filter & Sort State
+  let currentAcuityFilter = 'ALL';
+  let currentStatusFilter = 'ACTIVE';
+  let currentSort = 'score_desc';
+  let searchQuery = '';
+  let activeSelectedPatient = null;
+  let cycleCounter = 14;
+
+  // DOM Elements
+  const tbody = document.getElementById('queue-table-body');
+  const emptyMsg = document.getElementById('no-results-msg');
+  const searchInput = document.getElementById('queue-search');
+  const sortSelect = document.getElementById('queue-sort');
+  const tickerEl = document.getElementById('cycle-ticker');
+
+  // KPI Elements
+  const kpiTotal = document.getElementById('kpi-total-waiting');
+  const kpiCritical = document.getElementById('kpi-critical-waiting');
+  const kpiLongest = document.getElementById('kpi-longest-wait');
+  const kpiNearReject = document.getElementById('kpi-near-rejection');
+
+  // Live bed indicators
+  const liveCritEl = document.getElementById('live-crit-beds');
+  const liveMonEl = document.getElementById('live-mon-beds');
+  const liveGenEl = document.getElementById('live-gen-beds');
+
+  // Drawers & Modals
+  const drawerBackdrop = document.getElementById('drawer-backdrop');
+  const drawerAlloc = document.getElementById('drawer-allocation');
+  const drawerDetail = document.getElementById('drawer-patient-detail');
+  const modalSimulate = document.getElementById('modal-simulate');
+
+  // Calculate dynamic priority score
+  function getScore(p) {
+    return p.weight * p.waitTime;
+  }
+
+  // Update top KPI cards
+  function updateKPIs() {
+    const activePatients = patients.filter(p => p.status !== 'REJECTED');
+    kpiTotal.textContent = activePatients.length;
+
+    const critPatients = activePatients.filter(p => p.acuity === 3);
+    kpiCritical.textContent = critPatients.length;
+
+    const nearRejects = activePatients.filter(p => p.waitTime >= 180);
+    kpiNearReject.textContent = nearRejects.length;
+
+    if (activePatients.length > 0) {
+      const longest = Math.max(...activePatients.map(p => p.waitTime));
+      kpiLongest.textContent = `${longest} min`;
+    } else {
+      kpiLongest.textContent = `0 min`;
+    }
+
+    liveCritEl.textContent = `${wardBeds.critical} Avail`;
+    liveMonEl.textContent = `${wardBeds.monitored} Avail`;
+    liveGenEl.textContent = `${wardBeds.general} Avail`;
+  }
+
+  // Toast Notification
+  function showToast(message, isError = false) {
+    const container = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = `pointer-events-auto flex items-center gap-space-sm px-space-md py-space-sm rounded shadow-lg transition-all duration-300 transform translate-y-2 opacity-0 ${
+      isError ? 'bg-error text-on-error' : 'bg-on-surface text-surface'
+    }`;
+    toast.innerHTML = `
+      <span class="material-symbols-outlined text-[18px]">${isError ? 'error' : 'check_circle'}</span>
+      <span class="font-body-sm text-body-sm font-medium">${message}</span>
+    `;
+    container.appendChild(toast);
+
+    // animate in
+    setTimeout(() => {
+      toast.classList.remove('translate-y-2', 'opacity-0');
+    }, 10);
+
+    // remove after 3.5s
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-2');
+      setTimeout(() => toast.remove(), 300);
+    }, 3500);
+  }
+
+  // Render Table
+  function renderTable() {
+    // 1. Filter
+    let filtered = patients.filter(p => {
+      // Search
+      if (searchQuery && !p.id.toLowerCase().includes(searchQuery.toLowerCase())) {
+        return false;
+      }
+      // Acuity filter
+      if (currentAcuityFilter !== 'ALL' && p.acuity !== parseInt(currentAcuityFilter, 10)) {
+        return false;
+      }
+      // Status filter
+      if (currentStatusFilter === 'ACTIVE') {
+        return p.status !== 'REJECTED';
+      } else if (currentStatusFilter === 'NEAR_REJECT') {
+        return p.waitTime >= 180 && p.status !== 'REJECTED';
+      }
+      return true; // Show all including rejected
+    });
+
+    // 2. Sort
+    filtered.sort((a, b) => {
+      if (currentSort === 'score_desc') return getScore(b) - getScore(a);
+      if (currentSort === 'wait_desc') return b.waitTime - a.waitTime;
+      if (currentSort === 'acuity_desc') return b.acuity - a.acuity;
+      if (currentSort === 'time_asc') return a.arrival.localeCompare(b.arrival);
+      return 0;
+    });
+
+    tbody.innerHTML = '';
+
+    if (filtered.length === 0) {
+      emptyMsg.classList.remove('hidden');
+    } else {
+      emptyMsg.classList.add('hidden');
+    }
+
+    filtered.forEach((p, idx) => {
+      const score = getScore(p);
+      const isRejected = p.status === 'REJECTED' || p.waitTime > 240;
+      const isNearReject = p.waitTime >= 180 && !isRejected;
+
+      // Acuity badge styling
+      let acuityClass = "bg-[#FFF0F3] text-primary";
+      if (p.acuity === 2) acuityClass = "bg-secondary-fixed text-on-secondary-fixed-variant";
+      if (p.acuity === 3) acuityClass = "bg-primary text-on-primary font-semibold";
+
+      const tr = document.createElement('tr');
+      tr.className = `hover:bg-surface-container-low/70 transition-colors ${
+        isRejected ? 'opacity-60 bg-surface-container-high/20' : ''
+      }`;
+
+      tr.innerHTML = `
+        <td class="px-space-md py-space-sm text-center text-tertiary font-metric-tabular">${idx + 1}</td>
+        <td class="px-space-md py-space-sm font-metric-tabular font-bold">
+          <button type="button" class="btn-view-patient hover:text-primary underline decoration-dotted transition-colors" data-id="${p.id}">
+            ${p.id}
+          </button>
+        </td>
+        <td class="px-space-md py-space-sm text-tertiary font-metric-tabular">${p.arrival}</td>
+        <td class="px-space-md py-space-sm">
+          <span class="px-space-sm py-0.5 rounded font-label-sm text-label-sm ${acuityClass}">
+            ${p.acuityLabel}
+          </span>
+        </td>
+        <td class="px-space-md py-space-sm text-center font-metric-tabular">${p.weight}</td>
+        <td class="px-space-md py-space-sm text-right font-metric-tabular">
+          <span class="${isNearReject ? 'text-error font-bold' : 'text-on-surface'}">${p.waitTime} min</span>
+          ${isNearReject ? '<span class="block font-label-sm text-label-sm text-error uppercase leading-tight mt-0.5">Near SLA</span>' : ''}
+        </td>
+        <td class="px-space-md py-space-sm font-medium text-on-surface">${p.required}</td>
+        <td class="px-space-md py-space-sm text-tertiary font-body-sm hidden xl:table-cell">${p.compatible}</td>
+        <td class="px-space-md py-space-sm text-right font-metric-tabular text-on-surface font-bold text-headline-sm">
+          ${score}
+        </td>
+        <td class="px-space-md py-space-sm">
+          ${
+            isRejected
+              ? '<span class="text-error font-label-sm text-label-sm font-semibold">REJECTED (SLA &gt;240m)</span>'
+              : `<div class="flex items-center gap-space-xs text-on-surface font-medium">
+                  <span class="w-2 h-2 rounded-full ${p.acuity === 3 ? 'bg-primary' : p.acuity === 2 ? 'bg-secondary-container' : 'bg-tertiary'}"></span>
+                  <span>${p.recommended}</span>
+                </div>`
+          }
+        </td>
+        <td class="px-space-md py-space-sm text-right">
+          ${
+            isRejected
+              ? `<button disabled class="px-space-md py-1 rounded font-label-sm text-label-sm bg-surface-container-high text-tertiary cursor-not-allowed">Transferred Out</button>`
+              : `<button type="button" class="btn-allocate px-space-md py-1 rounded font-label-sm text-label-sm bg-primary hover:bg-primary-container text-on-primary font-semibold shadow-sm transition-all" data-id="${p.id}">
+                  Allocate
+                </button>`
+          }
+        </td>
+      `;
+
+      tbody.appendChild(tr);
+    });
+
+    // Bind Patient click
+    tbody.querySelectorAll('.btn-view-patient').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const id = e.currentTarget.getAttribute('data-id');
+        openPatientDetail(id);
+      });
+    });
+
+    // Bind Allocate click
+    tbody.querySelectorAll('.btn-allocate').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const id = e.currentTarget.getAttribute('data-id');
+        openAllocationDrawer(id);
+      });
+    });
+  }
+
+  // Open Allocation Drawer
+  function openAllocationDrawer(patientId) {
+    const patient = patients.find(p => p.id === patientId);
+    if (!patient) return;
+    activeSelectedPatient = patient;
+
+    document.getElementById('alloc-patient-id').textContent = patient.id;
+    document.getElementById('alloc-arrival-time').textContent = `Arrival: ${patient.arrival}`;
+    const badge = document.getElementById('alloc-acuity-badge');
+    badge.textContent = patient.acuityLabel;
+    badge.className = `px-space-md py-1 rounded font-label-md text-label-md font-semibold ${
+      patient.acuity === 3 ? 'bg-primary text-on-primary' : patient.acuity === 2 ? 'bg-secondary-fixed text-on-secondary-fixed-variant' : 'bg-[#FFF0F3] text-primary'
+    }`;
+
+    document.getElementById('alloc-wait-val').textContent = `${patient.waitTime} min`;
+    document.getElementById('alloc-score-val').textContent = `${getScore(patient)} pts`;
+    document.getElementById('alloc-req-bed').textContent = patient.required;
+    document.getElementById('alloc-compat-bed').textContent = patient.compatible;
+    document.getElementById('alloc-target-bed').textContent = patient.recommended;
+
+    // Protection note logic
+    const noteEl = document.getElementById('alloc-protection-note');
+    if (patient.acuity === 3) {
+      noteEl.textContent = "Critical capacity required. Level 3 patients cannot occupy lower wards. Direct ICU transfer initiated.";
+    } else if (patient.acuity === 2) {
+      noteEl.textContent = "Monitored capacity available — Critical ICU capacity safely preserved for Level 3 emergencies.";
+    } else {
+      noteEl.textContent = "General capacity available — specialized monitored/ICU capacity preserved for higher acuities.";
+    }
+
+    drawerBackdrop.classList.remove('hidden');
+    drawerAlloc.classList.remove('translate-x-full');
+  }
+
+  // Open Patient Detail Drawer
+  function openPatientDetail(patientId) {
+    const patient = patients.find(p => p.id === patientId);
+    if (!patient) return;
+
+    document.getElementById('dtl-patient-id').textContent = patient.id;
+    document.getElementById('dtl-arrival').textContent = patient.arrival;
+    document.getElementById('dtl-weight').textContent = patient.weight;
+    document.getElementById('dtl-wait').textContent = `${patient.waitTime} min`;
+    document.getElementById('dtl-req-bed').textContent = patient.required;
+    document.getElementById('dtl-compat-bed').textContent = patient.compatible;
+    document.getElementById('dtl-score').textContent = `${getScore(patient)} pts`;
+    document.getElementById('dtl-rec-bed').textContent = patient.recommended;
+    document.getElementById('timeline-time-arrival').textContent = `${patient.arrival} • Initial intake logged`;
+
+    const tag = document.getElementById('dtl-acuity-tag');
+    tag.textContent = patient.acuityLabel;
+    tag.className = `px-space-md py-1 rounded font-label-md text-label-md font-semibold ${
+      patient.acuity === 3 ? 'bg-primary text-on-primary' : patient.acuity === 2 ? 'bg-secondary-fixed text-on-secondary-fixed-variant' : 'bg-[#FFF0F3] text-primary'
+    }`;
+
+    drawerBackdrop.classList.remove('hidden');
+    drawerDetail.classList.remove('translate-x-full');
+  }
+
+  // Close all drawers
+  function closeDrawers() {
+    drawerAlloc.classList.add('translate-x-full');
+    drawerDetail.classList.add('translate-x-full');
+    drawerBackdrop.classList.add('hidden');
+    activeSelectedPatient = null;
+  }
+
+  // Confirm Allocation Action
+  document.getElementById('btn-confirm-alloc').addEventListener('click', () => {
+    if (!activeSelectedPatient) return;
+
+    const pId = activeSelectedPatient.id;
+    const targetBed = activeSelectedPatient.recommended;
+    const acuity = activeSelectedPatient.acuity;
+
+    // Decrement bed capacity inventory
+    if (acuity === 3 && wardBeds.critical > 0) wardBeds.critical--;
+    else if (acuity === 2 && wardBeds.monitored > 0) wardBeds.monitored--;
+    else if (acuity === 1 && wardBeds.general > 0) wardBeds.general--;
+
+    // Remove patient from waiting queue
+    patients = patients.filter(p => p.id !== pId);
+
+    closeDrawers();
+    updateKPIs();
+    renderTable();
+    showToast(`${pId} successfully allocated to ${targetBed}. Ward inventory decremented.`);
+  });
+
+  // Drawer Close Button Listeners
+  document.getElementById('btn-close-alloc-drawer').addEventListener('click', closeDrawers);
+  document.getElementById('btn-cancel-alloc').addEventListener('click', closeDrawers);
+  document.getElementById('btn-close-detail-drawer').addEventListener('click', closeDrawers);
+  document.getElementById('btn-close-detail').addEventListener('click', closeDrawers);
+  drawerBackdrop.addEventListener('click', closeDrawers);
+
+  // Search input
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    renderTable();
+  });
+
+  // Acuity filter buttons
+  document.querySelectorAll('.filter-acuity-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.filter-acuity-btn').forEach(b => {
+        b.className = "filter-acuity-btn px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all";
+      });
+      e.currentTarget.className = "filter-acuity-btn px-space-md py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary transition-all";
+      currentAcuityFilter = e.currentTarget.getAttribute('data-filter-acuity');
+      renderTable();
+    });
+  });
+
+  // Status filter buttons
+  document.querySelectorAll('.filter-status-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.filter-status-btn').forEach(b => {
+        b.className = "filter-status-btn px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:bg-surface-container-high transition-all";
+      });
+      e.currentTarget.className = "filter-status-btn px-space-md py-1 rounded font-label-sm text-label-sm bg-primary text-on-primary transition-all";
+      currentStatusFilter = e.currentTarget.getAttribute('data-filter-status');
+      renderTable();
+    });
+  });
+
+  // Sort dropdown
+  sortSelect.addEventListener('change', (e) => {
+    currentSort = e.target.value;
+    renderTable();
+  });
+
+  // Simulate Arrival Modal Handling
+  const btnOpenSimModal = document.getElementById('btn-open-simulate-modal');
+  const btnCloseSimModal = document.getElementById('btn-close-simulate-modal');
+  const btnCancelSim = document.getElementById('btn-cancel-simulate');
+  const simForm = document.getElementById('simulate-form');
+  const simAcuitySelect = document.getElementById('sim-acuity');
+  const simWaitInput = document.getElementById('sim-wait-time');
+  const simCalcScore = document.getElementById('sim-calc-score');
+  const simCalcCompat = document.getElementById('sim-calc-compat');
+
+  function openSimModal() {
+    modalSimulate.classList.remove('hidden');
+    updateSimPreview();
+  }
+
+  function closeSimModal() {
+    modalSimulate.classList.add('hidden');
+  }
+
+  function updateSimPreview() {
+    const acuityVal = parseInt(simAcuitySelect.value, 10);
+    const wait = parseInt(simWaitInput.value || '0', 10);
+    let weight = 1;
+    let compat = "General / Monitored / Critical";
+    if (acuityVal === 3) { weight = 8; compat = "Critical only"; }
+    else if (acuityVal === 2) { weight = 3; compat = "Monitored / Critical"; }
+
+    const score = weight * wait;
+    simCalcScore.textContent = `${score} (${weight} × ${wait}m)`;
+    simCalcCompat.textContent = compat;
+  }
+
+  simAcuitySelect.addEventListener('change', updateSimPreview);
+  simWaitInput.addEventListener('input', updateSimPreview);
+  btnOpenSimModal.addEventListener('click', openSimModal);
+  btnCloseSimModal.addEventListener('click', closeSimModal);
+  btnCancelSim.addEventListener('click', closeSimModal);
+
+  simForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const acuityVal = parseInt(simAcuitySelect.value, 10);
+    const wait = parseInt(simWaitInput.value || '0', 10);
+
+    // Generate random synthetic ID
+    const randomNum = Math.floor(100 + Math.random() * 899);
+    const newId = `P-00${randomNum}`;
+
+    let acuityLabel = "L1 Standard";
+    let weight = 1;
+    let req = "General";
+    let compat = "General / Monitored / Critical";
+    let rec = "General (Bed G-16)";
+
+    if (acuityVal === 3) {
+      acuityLabel = "L3 Critical";
+      weight = 8;
+      req = "Critical";
+      compat = "Critical only";
+      rec = "Critical (Bed C-05)";
+    } else if (acuityVal === 2) {
+      acuityLabel = "L2 Urgent";
+      weight = 3;
+      req = "Monitored";
+      compat = "Monitored / Critical";
+      rec = "Monitored (Bed M-10)";
+    }
+
+    const now = new Date();
+    const arrivalTimeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+
+    const newPatient = {
+      id: newId,
+      arrival: arrivalTimeStr,
+      acuity: acuityVal,
+      acuityLabel: acuityLabel,
+      weight: weight,
+      waitTime: wait,
+      required: req,
+      compatible: compat,
+      recommended: rec,
+      targetBedId: rec,
+      status: wait > 240 ? "REJECTED" : wait >= 180 ? "NEAR_REJECT" : "ACTIVE"
+    };
+
+    patients.unshift(newPatient);
+    closeSimModal();
+    updateKPIs();
+    renderTable();
+    showToast(`Injected ${newId} (${acuityLabel}) into live queue.`);
+  });
+
+  // Simulation Cycle Ticker Interval
+  setInterval(() => {
+    cycleCounter--;
+    if (cycleCounter <= 0) {
+      cycleCounter = 15;
+      // Increment wait times slightly on active patients to simulate live time
+      patients.forEach(p => {
+        if (p.status !== 'REJECTED') {
+          p.waitTime += 1;
+          if (p.waitTime >= 180 && p.status === 'ACTIVE') {
+            p.status = 'NEAR_REJECT';
+          }
+          if (p.waitTime > 240 && p.status !== 'REJECTED') {
+            p.status = 'REJECTED';
+            p.recommended = "REJECTED — SLA Exceeded";
+          }
+        }
+      });
+      updateKPIs();
+      renderTable();
+    }
+    tickerEl.textContent = `00:${String(cycleCounter).padStart(2, '0')}s`;
+  }, 1000);
+
+  // Auto-Ingest Toggle micro-interaction
+  const autoIngestBtn = document.getElementById('auto-ingest-toggle');
+  const autoIngestBall = document.getElementById('auto-ingest-ball');
+  let autoIngestActive = true;
+
+  autoIngestBtn.addEventListener('click', () => {
+    autoIngestActive = !autoIngestActive;
+    if (autoIngestActive) {
+      autoIngestBtn.classList.remove('bg-surface-container-high');
+      autoIngestBtn.classList.add('bg-primary');
+      autoIngestBall.classList.add('translate-x-4');
+      autoIngestBall.classList.remove('translate-x-0');
+      showToast("Live telemetry queue ingest resumed.");
+    } else {
+      autoIngestBtn.classList.add('bg-surface-container-high');
+      autoIngestBtn.classList.remove('bg-primary');
+      autoIngestBall.classList.remove('translate-x-4');
+      autoIngestBall.classList.add('translate-x-0');
+      showToast("Live telemetry queue paused (Manual Freeze).");
+    }
+  });
+
+  // Initial Boot
+  updateKPIs();
+  renderTable();
+})();
+</script></main></div></body></html>

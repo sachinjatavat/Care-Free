@@ -1,0 +1,1529 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#615a5c", "surface-container-high": "#eae7e7", "surface-container-low": "#f6f3f2", "on-surface-variant": "#574144", "surface-bright": "#fcf9f8", "on-primary": "#ffffff", "inverse-surface": "#303030", "error-container": "#ffdad6", "tertiary-fixed-dim": "#cdc4c6", "on-tertiary-fixed": "#1f1a1c", "inverse-primary": "#ffb2be", "surface": "#fcf9f8", "primary-fixed-dim": "#ffb2be", "secondary-container": "#fd6f8e", "primary": "#a92a4d", "primary-container": "#ca4465", "surface-dim": "#dcd9d9", "on-secondary-fixed": "#400014", "error": "#ba1a1a", "on-tertiary-container": "#fffbff", "on-primary-fixed-variant": "#8c1039", "on-tertiary": "#ffffff", "surface-container-highest": "#e4e2e1", "on-error-container": "#93000a", "on-error": "#ffffff", "on-secondary": "#ffffff", "tertiary-fixed": "#eae0e2", "on-secondary-fixed-variant": "#8a153a", "background": "#fcf9f8", "on-primary-container": "#fffbff", "inverse-on-surface": "#f3f0ef", "surface-tint": "#ac2d50", "surface-container": "#f0eded", "secondary": "#aa3050", "on-background": "#1b1c1c", "on-surface": "#1b1c1c", "outline-variant": "#debfc2", "on-primary-fixed": "#400014", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffd9de", "surface-variant": "#e4e2e1", "tertiary-container": "#7a7375", "on-secondary-container": "#6f0029", "primary-fixed": "#ffd9de", "on-tertiary-fixed-variant": "#4b4547", "outline": "#8b7174", "secondary-fixed-dim": "#ffb2be" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-md": "0.75rem", "margin": "1rem", "space-xl": "1.5rem", "gutter": "0.75rem", "space-sm": "0.375rem", "margin-panel": "0.75rem", "space-lg": "1rem", "gutter-compact": "0.5rem" }, "fontFamily": { "body-sm": ["Inter"], "headline-sm": ["Inter"], "label-sm": ["Inter"], "metric-tabular": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "metric-tabular": ["14px", { "lineHeight": "18px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-14 px-margin flex items-center gap-space-md bg-surface-container-lowest"><div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">local_hospital</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface truncate tracking-tight">CareFlow</span><span class="font-label-sm text-label-sm text-outline truncate uppercase">Smart Allocation</span></div></div><div class="px-space-md py-space-xs"><span class="px-space-sm font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Clinical Navigation</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-bold rounded-xl"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-bold transition-all bg-secondary-fixed text-on-secondary-fixed" data-path="bed-allocation-overview" href="#" onclick="selectSidebarLink(this, 'dashboard')"><span class="material-symbols-outlined text-[18px]">space_dashboard</span><span class="">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="waiting-patients" href="#" onclick="selectSidebarLink(this, 'dashboard')"><span class="material-symbols-outlined text-[18px]">person_search</span><span class="">Waiting Patients</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="bed-capacity" href="#" onclick="selectSidebarLink(this, 'dashboard')"><span class="material-symbols-outlined text-[18px]">hotel</span><span class="">Bed Capacity</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="hackathon-simulator" href="#" onclick="selectSidebarLink(this, 'simulator')"><span class="material-symbols-outlined text-[18px]">neurology</span><span class="">Simulation</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="scoring-and-judging-metrics" href="#" onclick="selectSidebarLink(this, 'analytics')"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="">Analytics</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="decision-log" href="#" onclick="selectSidebarLink(this, 'decision-log')"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span class="">Decision Log</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low mx-space-md mb-margin rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-tertiary uppercase">System Status</span><span class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#065F46] opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-[#065F46]"></span></span>Simulator Ready</span></div><div class="flex flex-col pt-space-xs"><span class="font-label-sm text-label-sm text-tertiary uppercase">Shift / Duty Role</span><span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Nurse Supervisor / Triage</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">CareFlow</span><span class="text-outline font-body-sm text-body-sm hidden lg:inline">–</span><span class="font-body-md text-body-md text-on-surface-variant hidden lg:inline">Hospital Bed Allocation System</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-primary text-[16px]">notifications_active</span><span class="font-label-sm text-label-sm text-primary font-semibold">Status: 1 Critical Patient in Waiting Queue</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Demo Mode</span><button aria-checked="true" class="relative inline-flex h-4 w-8 flex-shrink-0 cursor-pointer rounded-full bg-primary transition-colors duration-200 ease-in-out focus:outline-none" role="switch" type="button"><span class="translate-x-4 inline-block h-3 w-3 mt-0.5 ml-0.5 transform rounded-full bg-on-primary transition duration-200 ease-in-out"></span></button></div><button class="flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[16px]">bolt</span><span class="">Run Live Allocation</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface">Dr. Sarah Lin</span><span class="font-label-sm text-label-sm text-outline">Triage Operations</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-14 w-full bg-surface min-h-screen px-space-lg py-space-lg"><div class="flex flex-col w-full">
+<!-- Toast Notification Container -->
+<script>function selectSidebarLink(el, tabTarget) { document.querySelectorAll('aside nav a').forEach(a => { a.removeAttribute('aria-current'); a.className = 'flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all'; }); el.setAttribute('aria-current', 'page'); el.className = 'flex items-center gap-space-md px-space-md py-space-sm rounded-xl font-bold transition-all bg-secondary-fixed text-on-secondary-fixed'; if (typeof switchTab === 'function' && tabTarget) { switchTab(tabTarget); } }</script><div class="fixed bottom-space-lg right-space-lg z-50 flex flex-col gap-space-xs pointer-events-none" id="toast-container"></div>
+<!-- MAIN TAB WRAPPER -->
+<div class="flex flex-col gap-space-lg w-full max-w-[1600px] mx-auto">
+<!-- SYSTEM SUB-NAV (Tabs mirrored from sidebar for effortless in-page switching) -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-xs rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto" id="app-tab-nav">
+<button class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-semibold transition-all" data-tab-btn="dashboard" onclick="switchTab('dashboard')">
+<span class="material-symbols-outlined text-[18px]">space_dashboard</span>
+<span class="">Bed Allocation</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all" data-tab-btn="simulator" onclick="switchTab('simulator')">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span class="">Hospital Simulator</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all" data-tab-btn="analytics" onclick="switchTab('analytics')">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+<span class="">Judging &amp; Analytics</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all" data-tab-btn="decision-log" onclick="switchTab('decision-log')">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span class="">Audit Log</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md pr-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">SIMULATION STATUS: READY</span>
+</div>
+<button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-md py-space-xs rounded-xl font-label-sm text-label-sm transition-colors" onclick="openStaffModal()">
+<span class="material-symbols-outlined text-[16px]">badge</span>
+<span class="">Duty Roster</span>
+</button>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- TAB 1: MAIN BED ALLOCATION DASHBOARD -->
+<!-- ========================================================================= -->
+<section class="flex flex-col gap-space-lg" id="tab-dashboard">
+<!-- Top Title Bar with Command Tools -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Bed Allocation Dashboard</h1>
+<span class="bg-surface-container-high text-tertiary px-space-sm py-0.5 rounded-md font-label-sm text-label-sm uppercase">PROTOTYPE V1.0</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary">Real-time acute care telemetry, queue optimization, and non-eviction throughput tracking</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Run Interval</span>
+<span class="font-metric-tabular text-metric-tabular text-on-surface">30s</span>
+</div>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-lg py-space-sm rounded-xl font-label-md text-label-md transition-all shadow-sm active:translate-y-px" onclick="openArrivalModal()"><span class="material-symbols-outlined text-[18px]">person_add</span><span class="">+ Simulate Patient Arrival</span></button>
+</div>
+</div>
+<!-- 5 COMPACT KPI METRIC CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter">
+<!-- Total Beds -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Total Beds</span>
+<span class="material-symbols-outlined text-outline text-[18px]">hotel</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="kpi-total-beds">45</span>
+<span class="font-label-sm text-label-sm text-tertiary">Beds Configured</span>
+</div>
+<div class="font-body-sm text-body-sm text-tertiary truncate">
+            30 Gen · 10 Mon · 5 Crit
+          </div>
+</div>
+<!-- Occupied Beds -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Occupied</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">71%</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="kpi-occupied-beds">32</span>
+<span class="font-label-sm text-label-sm text-tertiary">/ 45 Active</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" id="kpi-occupied-bar" style="width: 71%"></div>
+</div>
+</div>
+<!-- Waiting Patients -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Waiting</span>
+<span class="material-symbols-outlined text-outline text-[18px]">hourglass_top</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold" id="kpi-waiting-count">8</span>
+<span class="font-label-sm text-label-sm text-tertiary">In Queue</span>
+</div>
+<div class="font-body-sm text-body-sm text-tertiary">
+            Avg wait: <span class="text-on-surface font-semibold">14.6 min</span>
+</div>
+</div>
+<!-- Rejected (>240m) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Rejected (&gt;240m)</span>
+<span class="material-symbols-outlined text-error text-[18px]">cancel</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-error font-bold" id="kpi-rejected-count">5</span>
+<span class="font-label-sm text-label-sm text-tertiary">Transferred Out</span>
+</div>
+<div class="font-body-sm text-body-sm text-error font-medium">
+            SLA Exceeded threshold
+          </div>
+</div>
+<!-- Critical Waiting -->
+<div class="bg-secondary-fixed p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase tracking-wider font-bold">Critical Waiting</span>
+<span class="material-symbols-outlined text-primary text-[18px] animate-pulse">crisis_alert</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="kpi-critical-waiting">1</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed">Patient (L3)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold">Requires Action</span>
+<span class="bg-primary text-on-primary px-space-xs py-0.5 rounded font-label-sm text-label-sm">Urgent</span>
+</div>
+</div>
+</div>
+<!-- BED CAPACITY BREAKDOWN (3 Horizontal Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+  <!-- GENERAL BEDS -->
+  <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="openBedInspectModal('general')">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-space-xs">
+        <span class="font-headline-sm text-headline-sm text-on-surface">General Care</span>
+        <span class="font-label-sm text-label-sm text-tertiary">Ward 4A/4B</span>
+      </div>
+      <span class="bg-[#ECFDF5] text-[#065F46] px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-semibold">Available</span>
+    </div>
+    <div class="flex items-baseline justify-between pt-space-xs">
+      <div class="flex items-baseline gap-space-xs">
+        <span class="font-headline-lg text-headline-lg text-primary font-bold" id="cap-gen-occupied">21</span>
+        <span class="font-body-md text-body-md text-tertiary">/ 30 Occupied</span>
+      </div>
+      <div class="font-label-md text-label-md text-on-surface">
+        <span class="text-[#065F46] font-bold" id="cap-gen-avail">9</span> Available
+      </div>
+    </div>
+    <!-- Capacity Bar -->
+    <div class="flex flex-col gap-1">
+      <div class="w-full bg-secondary-fixed/40 h-2 rounded-full overflow-hidden flex">
+        <div class="bg-primary h-full rounded-full transition-all duration-300" id="bar-gen-fill" style="width: 70%"></div>
+      </div>
+      <div class="flex justify-between font-label-sm text-label-sm text-tertiary pt-0.5">
+        <span class="">70% Occupancy</span>
+        <span class="">Turnover: ~2.1h</span>
+      </div>
+    </div>
+  </div>
+  <!-- MONITORED BEDS -->
+  <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="openBedInspectModal('monitored')">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-space-xs">
+        <span class="font-headline-sm text-headline-sm text-on-surface">Monitored / Step-Down</span>
+        <span class="font-label-sm text-label-sm text-tertiary">Telemetry Unit</span>
+      </div>
+      <span class="bg-[#FFFBEB] text-[#92400E] px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-semibold">Limited</span>
+    </div>
+    <div class="flex items-baseline justify-between pt-space-xs">
+      <div class="flex items-baseline gap-space-xs">
+        <span class="font-headline-lg text-headline-lg text-primary font-bold" id="cap-mon-occupied">8</span>
+        <span class="font-body-md text-body-md text-tertiary">/ 10 Occupied</span>
+      </div>
+      <div class="font-label-md text-label-md text-on-surface">
+        <span class="text-[#92400E] font-bold" id="cap-mon-avail">2</span> Available
+      </div>
+    </div>
+    <!-- Capacity Bar -->
+    <div class="flex flex-col gap-1">
+      <div class="w-full bg-secondary-fixed/40 h-2 rounded-full overflow-hidden flex">
+        <div class="bg-primary h-full rounded-full transition-all duration-300" id="bar-mon-fill" style="width: 80%"></div>
+      </div>
+      <div class="flex justify-between font-label-sm text-label-sm text-tertiary pt-0.5">
+        <span class="">80% Occupancy</span>
+        <span class="">Turnover: ~3.4h</span>
+      </div>
+    </div>
+  </div>
+  <!-- CRITICAL BEDS -->
+  <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm cursor-pointer hover:bg-surface-container-low transition-colors" onclick="openBedInspectModal('critical')">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-space-xs">
+        <span class="font-headline-sm text-headline-sm text-on-surface">Critical Care (ICU)</span>
+        <span class="font-label-sm text-label-sm text-tertiary">ICU Ward 1</span>
+      </div>
+      <span class="bg-[#ECFDF5] text-[#065F46] px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-semibold">Available</span>
+    </div>
+    <div class="flex items-baseline justify-between pt-space-xs">
+      <div class="flex items-baseline gap-space-xs">
+        <span class="font-headline-lg text-headline-lg text-primary font-bold" id="cap-crit-occupied">3</span>
+        <span class="font-body-md text-body-md text-tertiary">/ 5 Occupied</span>
+      </div>
+      <div class="font-label-md text-label-md text-on-surface">
+        <span class="text-[#065F46] font-bold" id="cap-crit-avail">2</span> Available
+      </div>
+    </div>
+    <!-- Capacity Bar -->
+    <div class="flex flex-col gap-1">
+      <div class="w-full bg-secondary-fixed/40 h-2 rounded-full overflow-hidden flex">
+        <div class="bg-primary h-full rounded-full transition-all duration-300" id="bar-crit-fill" style="width: 60%"></div>
+      </div>
+      <div class="flex justify-between font-label-sm text-label-sm text-tertiary pt-0.5">
+        <span class="">60% Occupancy</span>
+        <span class="">Strict L3 Priority</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- TWO-COLUMN OPERATIONAL SECTION -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT 65%: WAITING PATIENTS QUEUE -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col overflow-hidden">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">group</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Waiting Patients Telemetry Queue</span>
+<span class="bg-surface-container-lowest px-space-xs py-0.5 rounded font-label-sm text-label-sm text-tertiary font-semibold" id="table-badge-count">5 In Primary Roster</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Ranked by Priority Score (Weight × Wait Time)</span>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="waiting-patients-table">
+<thead>
+<tr class="bg-surface-container-high/60 text-tertiary font-label-sm text-label-sm">
+<th class="py-space-sm px-space-md">Patient ID</th>
+<th class="py-space-sm px-space-sm">Arrival</th>
+<th class="py-space-sm px-space-sm">Acuity</th>
+<th class="py-space-sm px-space-sm">Wait</th>
+<th class="py-space-sm px-space-sm">Required</th>
+<th class="py-space-sm px-space-sm">Compatible</th>
+<th class="py-space-sm px-space-sm text-right">Score</th>
+<th class="py-space-sm px-space-sm">Recommendation</th>
+<th class="py-space-sm px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm" id="patient-table-body">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group" id="row-P-00421">
+<td class="py-space-sm px-space-md font-metric-tabular text-on-surface font-bold">P-00421</td>
+<td class="py-space-sm px-space-sm text-tertiary">12:42</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-primary text-on-primary px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">Level 3</span>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">18 min</td>
+<td class="py-space-sm px-space-sm text-primary font-semibold">Critical</td>
+<td class="py-space-sm px-space-sm text-tertiary">Critical</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular font-bold text-primary">144</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-space-xs py-0.5 rounded font-label-sm text-label-sm font-medium">Allocate Critical</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-sm py-1 rounded font-label-sm text-label-sm transition-all shadow-sm" onclick="openAllocateModal('P-00421', 'Level 3', '18 min', 'Critical', 'Critical only', '8', '2', 'Allocate Critical')">Allocate</button>
+<button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-all" onclick="openPatientDrawer('P-00421', 'Level 3 – Critical', '12:42', '18 min', 'Critical', 'Critical', 8, 'Waiting')">Details</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group" id="row-P-00422">
+<td class="py-space-sm px-space-md font-metric-tabular text-on-surface font-bold">P-00422</td>
+<td class="py-space-sm px-space-sm text-tertiary">12:44</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">Level 2</span>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">16 min</td>
+<td class="py-space-sm px-space-sm text-on-surface">Monitored</td>
+<td class="py-space-sm px-space-sm text-tertiary">Mon/Crit</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular font-bold text-on-surface">48</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded font-label-sm text-label-sm font-medium">Allocate Monitored</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-sm py-1 rounded font-label-sm text-label-sm transition-all shadow-sm" onclick="openAllocateModal('P-00422', 'Level 2', '16 min', 'Monitored', 'Monitored / Critical', '3', '2', 'Allocate Monitored')">Allocate</button>
+<button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-all" onclick="openPatientDrawer('P-00422', 'Level 2 – Urgent', '12:44', '16 min', 'Monitored', 'Monitored/Critical', 3, 'Waiting')">Details</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group" id="row-P-00423">
+<td class="py-space-sm px-space-md font-metric-tabular text-on-surface font-bold">P-00423</td>
+<td class="py-space-sm px-space-sm text-tertiary">12:47</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">Level 1</span>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">13 min</td>
+<td class="py-space-sm px-space-sm text-on-surface">General</td>
+<td class="py-space-sm px-space-sm text-tertiary">Gen/Mon/Crit</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular font-bold text-on-surface">13</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded font-label-sm text-label-sm font-medium">Allocate General</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-sm py-1 rounded font-label-sm text-label-sm transition-all shadow-sm" onclick="openAllocateModal('P-00423', 'Level 1', '13 min', 'General', 'General / Monitored / Critical', '1', '9', 'Allocate General')">Allocate</button>
+<button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-all" onclick="openPatientDrawer('P-00423', 'Level 1 – Standard', '12:47', '13 min', 'General', 'General/Mon/Crit', 1, 'Waiting')">Details</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group" id="row-P-00424">
+<td class="py-space-sm px-space-md font-metric-tabular text-on-surface font-bold">P-00424</td>
+<td class="py-space-sm px-space-sm text-tertiary">12:49</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">Level 2</span>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">11 min</td>
+<td class="py-space-sm px-space-sm text-on-surface">Monitored</td>
+<td class="py-space-sm px-space-sm text-tertiary">Mon/Crit</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular font-bold text-on-surface">33</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded font-label-sm text-label-sm font-medium">Allocate Monitored</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-sm py-1 rounded font-label-sm text-label-sm transition-all shadow-sm" onclick="openAllocateModal('P-00424', 'Level 2', '11 min', 'Monitored', 'Monitored / Critical', '3', '2', 'Allocate Monitored')">Allocate</button>
+<button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-all" onclick="openPatientDrawer('P-00424', 'Level 2 – Urgent', '12:49', '11 min', 'Monitored', 'Monitored/Critical', 3, 'Waiting')">Details</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors group" id="row-P-00425">
+<td class="py-space-sm px-space-md font-metric-tabular text-on-surface font-bold">P-00425</td>
+<td class="py-space-sm px-space-sm text-tertiary">12:52</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-secondary-fixed text-on-secondary-fixed px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">Level 1</span>
+</td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">8 min</td>
+<td class="py-space-sm px-space-sm text-on-surface">General</td>
+<td class="py-space-sm px-space-sm text-tertiary">Gen/Mon/Crit</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular font-bold text-on-surface">8</td>
+<td class="py-space-sm px-space-sm">
+<span class="bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded font-label-sm text-label-sm font-medium">Allocate General</span>
+</td>
+<td class="py-space-sm px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-sm py-1 rounded font-label-sm text-label-sm transition-all shadow-sm" onclick="openAllocateModal('P-00425', 'Level 1', '8 min', 'General', 'General / Monitored / Critical', '1', '9', 'Allocate General')">Allocate</button>
+<button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm transition-all" onclick="openPatientDrawer('P-00425', 'Level 1 – Standard', '12:52', '8 min', 'General', 'General/Mon/Crit', 1, 'Waiting')">Details</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- RIGHT 35%: ALLOCATION POLICY & COMPATIBILITY MATRIX -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Policy Rules -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Allocation Rules</span>
+<span class="bg-surface-container-high text-tertiary px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase">Hospital Ops Core</span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm font-body-sm text-tertiary divide-y divide-surface-container-low">
+<div class="pt-space-xs flex items-start gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px] shrink-0">1</span>
+<span class=""><strong class="text-on-surface">Non-Eviction Guarantee:</strong> Admitted patients never get displaced by higher acuity arrivals.</span>
+</div>
+<div class="pt-space-xs flex items-start gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px] shrink-0">2</span>
+<span class=""><strong class="text-on-surface">Acuity Weight Hierarchy:</strong> Level 3 (8x wait penalty), Level 2 (3x penalty), Level 1 (1x penalty).</span>
+</div>
+<div class="pt-space-xs flex items-start gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px] shrink-0">3</span>
+<span class=""><strong class="text-on-surface">240-Minute SLA Drop:</strong> Patients waiting past 4 hours trigger auto-rejection &amp; transfer protocol.</span>
+</div>
+<div class="pt-space-xs flex items-start gap-space-sm">
+<span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px] shrink-0">4</span>
+<span class=""><strong class="text-on-surface">Upward Flexibility:</strong> Lower acuity can occupy high acuity if lower beds are exhausted.</span>
+</div>
+</div>
+</div>
+<!-- Compatibility Matrix -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Compatibility Matrix</span>
+<span class="font-label-sm text-label-sm text-tertiary">Bed Capability Roster</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-center border-collapse text-body-sm font-body-sm">
+<thead>
+<tr class="bg-surface-container-high/60 text-tertiary font-label-sm text-label-sm">
+<th class="py-space-xs px-space-sm text-left">Acuity</th>
+<th class="py-space-xs px-space-sm">General</th>
+<th class="py-space-xs px-space-sm">Monitored</th>
+<th class="py-space-xs px-space-sm">Critical</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-metric-tabular">
+<tr>
+<td class="py-space-sm px-space-sm text-left font-body-sm font-semibold text-on-surface">Level 1 (Standard)</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">✓</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">✓</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">✓</td>
+</tr>
+<tr>
+<td class="py-space-sm px-space-sm text-left font-body-sm font-semibold text-on-surface">Level 2 (Urgent)</td>
+<td class="py-space-sm px-space-sm text-outline font-bold">—</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">✓</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">✓</td>
+</tr>
+<tr>
+<td class="py-space-sm px-space-sm text-left font-body-sm font-semibold text-on-surface">Level 3 (Critical)</td>
+<td class="py-space-sm px-space-sm text-outline font-bold">—</td>
+<td class="py-space-sm px-space-sm text-outline font-bold">—</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">✓</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="font-label-sm text-label-sm text-tertiary pt-space-xs italic">
+              Algorithm guards Critical &amp; Monitored capacity against unnecessary low-acuity encroachment.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- TAB 2: HOSPITAL SIMULATION (HACKATHON BENCHMARK SUITE) -->
+<!-- ========================================================================= -->
+<section class="hidden flex flex-col gap-space-lg" id="tab-simulator">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Hospital Telemetry Simulator</h2>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-space-sm py-0.5 rounded font-label-sm text-label-sm font-bold uppercase">Hackathon Benchmark</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary">Monte Carlo discrete-event synthetic engine for validating admission utility under stress</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-colors" onclick="resetSimulationForm()">
+            Reset Defaults
+          </button>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-lg py-space-sm rounded-xl font-label-md text-label-md transition-all shadow-sm flex items-center gap-space-xs" id="sim-run-btn" onclick="runSimulation()">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+<span class="">Run Simulation</span>
+</button>
+</div>
+</div>
+<!-- Config & Params Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Simulator Parameter Configuration</span>
+<span class="font-label-sm text-label-sm text-tertiary">Deterministic Random Engine</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Random Seed -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-tertiary uppercase">Random Seed</label>
+<input class="h-9 px-space-sm rounded bg-surface-container-low text-on-surface font-metric-tabular focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="sim-seed" type="number" value="20260911">
+</div>
+<!-- Patient Arrivals -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-tertiary uppercase">Patient Arrivals (N)</label>
+<input class="h-9 px-space-sm rounded bg-surface-container-low text-on-surface font-metric-tabular focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="sim-arrivals" type="number" value="500">
+</div>
+<!-- Mean Inter-arrival -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-tertiary uppercase">Mean Inter-Arrival (min)</label>
+<input class="h-9 px-space-sm rounded bg-surface-container-low text-on-surface font-metric-tabular focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="sim-interarrival" step="0.1" type="number" value="2.5">
+</div>
+</div>
+<!-- Acuity Distribution -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Acuity Distribution Profile</span>
+<div class="grid grid-cols-3 gap-space-md bg-surface-container-low p-space-sm rounded-xl">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Level 1 (Standard):</span>
+<span class="font-metric-tabular text-on-surface font-bold ml-1">60%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Level 2 (Urgent):</span>
+<span class="font-metric-tabular text-on-surface font-bold ml-1">30%</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Level 3 (Critical):</span>
+<span class="font-metric-tabular text-primary font-bold ml-1">10%</span>
+</div>
+</div>
+</div>
+<!-- Capacities and Length of Stay -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Ward Capacities (Beds)</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low p-space-xs rounded text-center">
+<span class="font-label-sm text-label-sm text-tertiary block">Gen</span>
+<span class="font-metric-tabular font-bold text-on-surface">30</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded text-center">
+<span class="font-label-sm text-label-sm text-tertiary block">Mon</span>
+<span class="font-metric-tabular font-bold text-on-surface">10</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded text-center">
+<span class="font-label-sm text-label-sm text-tertiary block">Crit</span>
+<span class="font-metric-tabular font-bold text-primary">5</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Median Stay Durations (LOS)</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low p-space-xs rounded text-center">
+<span class="font-label-sm text-label-sm text-tertiary block">Gen</span>
+<span class="font-metric-tabular text-on-surface font-bold">120m</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded text-center">
+<span class="font-label-sm text-label-sm text-tertiary block">Mon</span>
+<span class="font-metric-tabular text-on-surface font-bold">180m</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded text-center">
+<span class="font-label-sm text-label-sm text-tertiary block">Crit</span>
+<span class="font-metric-tabular text-on-surface font-bold">240m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Bar Area -->
+<div class="hidden flex-col gap-space-xs pt-space-md" id="sim-progress-box">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span id="sim-progress-label" class="">Evaluating discrete stochastic events...</span>
+<span class="font-metric-tabular font-bold" id="sim-progress-percent">0%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full transition-all duration-150" id="sim-progress-bar" style="width: 0%"></div>
+</div>
+</div>
+<!-- Success Banner -->
+<div class="hidden bg-[#ECFDF5] text-[#065F46] p-space-md rounded-xl items-center justify-between" id="sim-complete-banner">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md font-semibold">Simulation completed in 1.42s (Seed: 20260911)</span>
+</div>
+<span class="font-label-sm text-label-sm">500 Patient Cohort Assessed</span>
+</div>
+</div>
+<!-- Simulation Result Metrics Card -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Telemetry Outcomes</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-space-xs py-0.5 rounded font-bold">Run #81</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-tertiary block">Total Arrivals</span>
+<span class="font-headline-sm text-headline-sm font-metric-tabular text-on-surface font-bold" id="res-arrivals">500</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-tertiary block">Admissions</span>
+<span class="font-headline-sm text-headline-sm font-metric-tabular text-[#065F46] font-bold" id="res-admissions">476</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-tertiary block">Rejections</span>
+<span class="font-headline-sm text-headline-sm font-metric-tabular text-error font-bold" id="res-rejections">24</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-tertiary block">Mean Wait Time</span>
+<span class="font-headline-sm text-headline-sm font-metric-tabular text-on-surface font-bold" id="res-meanwait">16.4 m</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-xs divide-y divide-surface-container-low">
+<div class="flex items-center justify-between py-1">
+<span class="font-body-sm text-body-sm text-tertiary">Weighted Waiting Utility</span>
+<span class="font-metric-tabular text-on-surface font-bold">0.87</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="font-body-sm text-body-sm text-tertiary">Critical-Wait Utility</span>
+<span class="font-metric-tabular text-primary font-bold">0.92</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="font-body-sm text-body-sm text-tertiary">Rejection Minimization Utility</span>
+<span class="font-metric-tabular text-on-surface font-bold">0.94</span>
+</div>
+<div class="flex items-center justify-between py-1">
+<span class="font-body-sm text-body-sm text-tertiary">Capacity Preservation Utility</span>
+<span class="font-metric-tabular text-on-surface font-bold">0.98</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<button class="w-full bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md py-space-sm rounded-xl flex items-center justify-center gap-space-xs transition-colors" onclick="switchTab('analytics')">
+<span class="">Inspect Detailed Judging Analytics</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- TAB 3: SCORING & JUDGING METRICS (ANALYTICS) -->
+<!-- ========================================================================= -->
+<section class="hidden flex flex-col gap-space-lg" id="tab-analytics">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Hackathon Judging &amp; Objective Functions</h2>
+<span class="bg-[#ECFDF5] text-[#065F46] px-space-sm py-0.5 rounded font-label-sm text-label-sm font-semibold">Verification Pass</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary">Algorithmic scoring weights based on patient throughput, clinical fairness, and queue entropy</p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Compound Index:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">91.4 / 100</span>
+</div>
+</div>
+<!-- TOP 5 UTILITY SCORE CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Wait Utility</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold my-1">0.87</span>
+<span class="font-label-sm text-label-sm text-tertiary">Target &gt; 0.85 (Pass)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Critical Wait</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold my-1">0.92</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Priority Protected</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Rejection Score</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold my-1">0.94</span>
+<span class="font-label-sm text-label-sm text-tertiary">&lt; 5% Drop Rate</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Capacity Preserved</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold my-1">0.98</span>
+<span class="font-label-sm text-label-sm text-tertiary">Near-zero misuse</span>
+</div>
+<div class="bg-secondary-fixed p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase font-bold">Overall Utility</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold my-1">91.4</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed">Grade: Superior (A+)</span>
+</div>
+</div>
+<!-- 4 CLEAN SVG ANALYTICAL CHARTS -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Chart 1: Bed Occupancy Over Time -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bed Occupancy Over Time (Hours)</span>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary"><span class="w-2 h-2 rounded-full bg-primary"></span>Gen</span>
+<span class="flex items-center gap-1 text-secondary-container"><span class="w-2 h-2 rounded-full bg-secondary-container"></span>Mon</span>
+<span class="flex items-center gap-1 text-tertiary"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Crit</span>
+</div>
+</div>
+<div class="w-full h-52 pt-space-xs">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 450 180">
+<!-- Grid lines -->
+<line stroke="#f0eded" stroke-width="1" x1="0" x2="450" y1="30" y2="30"></line>
+<line stroke="#f0eded" stroke-width="1" x1="0" x2="450" y1="75" y2="75"></line>
+<line stroke="#f0eded" stroke-width="1" x1="0" x2="450" y1="120" y2="120"></line>
+<line stroke="#f0eded" stroke-width="1" x1="0" x2="450" y1="165" y2="165"></line>
+<!-- General line (Primary #a92a4d) -->
+<polyline fill="none" points="10,130 50,115 100,80 150,65 200,90 250,55 300,45 350,50 400,60 440,55" stroke="#a92a4d" stroke-linecap="round" stroke-width="2.5"></polyline>
+<!-- Monitored line (Secondary-container #fd6f8e) -->
+<polyline fill="none" points="10,145 50,140 100,120 150,110 200,105 250,95 300,90 350,85 400,80 440,78" stroke="#fd6f8e" stroke-linecap="round" stroke-width="2"></polyline>
+<!-- Critical line (Tertiary #615a5c) -->
+<polyline fill="none" points="10,160 50,155 100,150 150,145 200,140 250,135 300,140 350,130 400,135 440,128" stroke="#615a5c" stroke-dasharray="4" stroke-width="2"></polyline>
+</svg>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-tertiary px-1">
+<span class="">08:00</span>
+<span class="">10:00</span>
+<span class="">12:00 (Peak)</span>
+<span class="">14:00</span>
+<span class="">16:00</span>
+</div>
+</div>
+<!-- Chart 2: Patients Waiting Over Time -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Active Queue Census (Waiting Count)</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Triage Equilibrium: Staged</span>
+</div>
+<div class="w-full h-52 pt-space-xs">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 450 180">
+<!-- Area fill gradient approximation -->
+<polygon fill="#ffd9de" opacity="0.6" points="10,165 50,145 90,120 140,150 190,85 240,65 290,95 340,70 390,110 440,120 440,165 10,165"></polygon>
+<polyline fill="none" points="10,165 50,145 90,120 140,150 190,85 240,65 290,95 340,70 390,110 440,120" stroke="#a92a4d" stroke-linecap="round" stroke-width="2.5"></polyline>
+</svg>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-tertiary px-1">
+<span class="">T-4h</span>
+<span class="">T-3h</span>
+<span class="">T-2h (Surge)</span>
+<span class="">T-1h</span>
+<span class="">Now (8 In Queue)</span>
+</div>
+</div>
+<!-- Chart 3: Admissions by Acuity -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Admissions by Acuity Category</span>
+<span class="font-label-sm text-label-sm text-tertiary">N = 476 Successful</span>
+</div>
+<div class="flex flex-col gap-space-md py-space-md">
+<!-- L1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Level 1 (Standard)</span>
+<span class="font-metric-tabular text-on-surface font-bold">285 patients (60%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-4 rounded-md overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded-md" style="width: 60%"></div>
+</div>
+</div>
+<!-- L2 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Level 2 (Urgent)</span>
+<span class="font-metric-tabular text-on-surface font-bold">143 patients (30%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-4 rounded-md overflow-hidden">
+<div class="bg-secondary-container h-full rounded-md" style="width: 30%"></div>
+</div>
+</div>
+<!-- L3 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="font-semibold text-primary">Level 3 (Critical)</span>
+<span class="font-metric-tabular text-primary font-bold">48 patients (10%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-4 rounded-md overflow-hidden">
+<div class="bg-primary h-full rounded-md" style="width: 10%"></div>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary pt-space-xs">100% of admitted Level 3 patients were placed in Critical beds.</span>
+</div>
+<!-- Chart 4: Average Waiting Time by Acuity -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mean Queue Time by Acuity</span>
+<span class="font-label-sm text-label-sm text-[#065F46] font-semibold">Priority Inversion Inverted</span>
+</div>
+<div class="flex items-end justify-around h-52 pt-space-md pb-space-xs">
+<!-- Col 1: L1 -->
+<div class="flex flex-col items-center gap-space-xs h-full justify-end">
+<span class="font-metric-tabular text-on-surface font-bold text-body-sm">14.2 min</span>
+<div class="w-16 bg-surface-container-high hover:bg-secondary-fixed rounded-t-lg transition-all" style="height: 60%"></div>
+<span class="font-label-sm text-label-sm text-tertiary">Level 1</span>
+</div>
+<!-- Col 2: L2 -->
+<div class="flex flex-col items-center gap-space-xs h-full justify-end">
+<span class="font-metric-tabular text-on-surface font-bold text-body-sm">18.5 min</span>
+<div class="w-16 bg-secondary-container/80 rounded-t-lg transition-all" style="height: 80%"></div>
+<span class="font-label-sm text-label-sm text-tertiary">Level 2</span>
+</div>
+<!-- Col 3: L3 -->
+<div class="flex flex-col items-center gap-space-xs h-full justify-end">
+<span class="font-metric-tabular text-primary font-bold text-body-sm">6.1 min</span>
+<div class="w-16 bg-primary rounded-t-lg transition-all" style="height: 25%"></div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Level 3</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary text-center">Critical patients dispatch at ~3x the acceleration of standard cohort.</span>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- TAB 4: DECISION & OCCUPANCY AUDIT LOG -->
+<!-- ========================================================================= -->
+<section class="hidden flex flex-col gap-space-lg" id="tab-decision-log">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Clinical Audit &amp; Decision Log</h2>
+<span class="bg-surface-container-high text-tertiary px-space-sm py-0.5 rounded font-label-sm text-label-sm uppercase">Immutable EHR Log</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary">Sequential audit trail recording dynamic bed selections, wait lengths, and capacity states</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline text-[18px]">search</span>
+<input class="h-9 pl-9 pr-3 rounded bg-surface-container-low text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary w-48 sm:w-64" id="log-search" onkeyup="filterLogTable()" placeholder="Filter by Patient ID..." type="text">
+</div>
+<button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-xl font-label-md text-label-md transition-colors" onclick="exportCSVLog()">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="">Export CSV</span>
+</button>
+</div>
+</div>
+<!-- AUDIT LOG TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="audit-table">
+<thead>
+<tr class="bg-surface-container-high/60 text-tertiary font-label-sm text-label-sm">
+<th class="py-space-sm px-space-md">Timestamp</th>
+<th class="py-space-sm px-space-sm">Patient ID</th>
+<th class="py-space-sm px-space-sm">Acuity</th>
+<th class="py-space-sm px-space-sm">Event Action</th>
+<th class="py-space-sm px-space-sm">Bed Assigned</th>
+<th class="py-space-sm px-space-sm">Elapsed Wait</th>
+<th class="py-space-sm px-space-sm text-right">Gen Left</th>
+<th class="py-space-sm px-space-sm text-right">Mon Left</th>
+<th class="py-space-sm px-space-md text-right">Crit Left</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm" id="audit-table-body">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-metric-tabular text-tertiary">12:42:18</td>
+<td class="py-space-sm px-space-sm font-metric-tabular font-bold text-on-surface">P-00421</td>
+<td class="py-space-sm px-space-sm"><span class="bg-primary text-on-primary px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">L3</span></td>
+<td class="py-space-sm px-space-sm"><span class="bg-[#ECFDF5] text-[#065F46] px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold">ADMITTED</span></td>
+<td class="py-space-sm px-space-sm font-semibold text-primary">Critical C-03</td>
+<td class="py-space-sm px-space-sm">18m</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">9</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">2</td>
+<td class="py-space-sm px-space-md text-right font-metric-tabular font-bold text-primary">1</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-metric-tabular text-tertiary">12:44:02</td>
+<td class="py-space-sm px-space-sm font-metric-tabular font-bold text-on-surface">P-00422</td>
+<td class="py-space-sm px-space-sm"><span class="bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">L2</span></td>
+<td class="py-space-sm px-space-sm"><span class="bg-[#ECFDF5] text-[#065F46] px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold">ADMITTED</span></td>
+<td class="py-space-sm px-space-sm font-semibold text-on-surface">Monitored M-08</td>
+<td class="py-space-sm px-space-sm">16m</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">9</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">1</td>
+<td class="py-space-sm px-space-md text-right font-metric-tabular">1</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-metric-tabular text-tertiary">12:47:11</td>
+<td class="py-space-sm px-space-sm font-metric-tabular font-bold text-on-surface">P-00423</td>
+<td class="py-space-sm px-space-sm"><span class="bg-secondary-fixed text-on-secondary-fixed px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">L1</span></td>
+<td class="py-space-sm px-space-sm"><span class="bg-[#FFFBEB] text-[#92400E] px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold">WAITING</span></td>
+<td class="py-space-sm px-space-sm text-outline">—</td>
+<td class="py-space-sm px-space-sm">13m</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">9</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">1</td>
+<td class="py-space-sm px-space-md text-right font-metric-tabular">1</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-metric-tabular text-tertiary">12:35:44</td>
+<td class="py-space-sm px-space-sm font-metric-tabular font-bold text-on-surface">P-00420</td>
+<td class="py-space-sm px-space-sm"><span class="bg-secondary-fixed text-on-secondary-fixed px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">L1</span></td>
+<td class="py-space-sm px-space-sm"><span class="bg-[#ECFDF5] text-[#065F46] px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold">ADMITTED</span></td>
+<td class="py-space-sm px-space-sm font-semibold text-on-surface">General G-14</td>
+<td class="py-space-sm px-space-sm">22m</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">10</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">2</td>
+<td class="py-space-sm px-space-md text-right font-metric-tabular">2</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-metric-tabular text-tertiary">12:20:05</td>
+<td class="py-space-sm px-space-sm font-metric-tabular font-bold text-on-surface">P-00419</td>
+<td class="py-space-sm px-space-sm"><span class="bg-primary text-on-primary px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">L3</span></td>
+<td class="py-space-sm px-space-sm"><span class="bg-[#ECFDF5] text-[#065F46] px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold">ADMITTED</span></td>
+<td class="py-space-sm px-space-sm font-semibold text-primary">Critical C-01</td>
+<td class="py-space-sm px-space-sm">9m</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">10</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">2</td>
+<td class="py-space-sm px-space-md text-right font-metric-tabular">2</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-metric-tabular text-tertiary">11:55:22</td>
+<td class="py-space-sm px-space-sm font-metric-tabular font-bold text-on-surface">P-00418</td>
+<td class="py-space-sm px-space-sm"><span class="bg-secondary-fixed text-on-secondary-fixed px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">L1</span></td>
+<td class="py-space-sm px-space-sm"><span class="bg-error text-on-error px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold">REJECTED</span></td>
+<td class="py-space-sm px-space-sm text-error">Transferred (Cap Full)</td>
+<td class="py-space-sm px-space-sm font-bold text-error">241m</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">0</td>
+<td class="py-space-sm px-space-sm text-right font-metric-tabular">0</td>
+<td class="py-space-sm px-space-md text-right font-metric-tabular">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</div>
+<!-- ========================================================================= -->
+<!-- MODAL: ALLOCATION CONFIRMATION DECISION -->
+<!-- ========================================================================= -->
+<div class="hidden fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md" id="allocation-modal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-lg w-full overflow-hidden flex flex-col transform transition-all animate-in fade-in zoom-in-95">
+<!-- Modal Header -->
+<div class="bg-surface-container-low px-space-lg py-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">medical_services</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Bed Allocation Decision</span>
+</div>
+<button class="text-tertiary hover:text-on-surface" onclick="closeAllocateModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Target Patient</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface font-metric-tabular" id="modal-patient-id">P-00421</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-tertiary uppercase">Acuity Status</span>
+<span class="bg-primary text-on-primary font-label-sm text-label-sm font-semibold px-space-sm py-0.5 rounded" id="modal-patient-acuity">Level 3 – Critical</span>
+</div>
+</div>
+<!-- Telemetry Data Grid -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-xl font-body-sm text-body-sm">
+<div>
+<span class="text-tertiary block font-label-sm text-label-sm">Elapsed Waiting Time:</span>
+<span class="text-on-surface font-bold font-metric-tabular" id="modal-waiting-time">18 minutes</span>
+</div>
+<div>
+<span class="text-tertiary block font-label-sm text-label-sm">Priority Weight:</span>
+<span class="text-on-surface font-bold font-metric-tabular" id="modal-priority-weight">8 (Critical Tier)</span>
+</div>
+<div>
+<span class="text-tertiary block font-label-sm text-label-sm">Required Bed Type:</span>
+<span class="text-primary font-semibold" id="modal-required-bed">Critical Bed</span>
+</div>
+<div>
+<span class="text-tertiary block font-label-sm text-label-sm">Compatible Capacity:</span>
+<span class="text-on-surface" id="modal-compatible-capacity">Critical only</span>
+</div>
+</div>
+<!-- Recommendation Banner -->
+<div class="bg-secondary-fixed/50 p-space-md rounded-xl flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase font-bold">Algorithmic Recommendation</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="modal-rec-action">ALLOCATE CRITICAL BED</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-0.5" id="modal-rec-reason">
+            Critical patients hold an 8x wait penalty and must secure dedicated telemetry capacity to prevent irreversible clinical deterioration.
+          </p>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-tertiary">
+<span class="">Current Critical Availability:</span>
+<span class="font-metric-tabular font-bold text-[#065F46]" id="modal-crit-avail">2 Beds Ready</span>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="bg-surface-container-low px-space-lg py-space-sm flex items-center justify-end gap-space-sm">
+<button class="bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-space-sm rounded-xl transition-colors" onclick="closeAllocateModal()">
+          Cancel
+        </button>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-space-sm rounded-xl transition-all shadow-sm" id="btn-confirm-allocation" onclick="confirmAllocationAction()">
+          Confirm Allocation
+        </button>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- DRAWER: PATIENT DETAIL TIMELINE VIEW -->
+<!-- ========================================================================= -->
+<div class="hidden fixed inset-0 z-50 overflow-hidden" id="patient-drawer">
+<div class="absolute inset-0 bg-inverse-surface/30 backdrop-blur-xs transition-opacity" onclick="closePatientDrawer()"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-md bg-surface-container-lowest shadow-2xl flex flex-col">
+<!-- Drawer Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">personal_injury</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="drawer-patient-id">P-00421</span>
+<span class="font-label-sm text-label-sm text-tertiary">Patient Intake &amp; Telemetry Trajectory</span>
+</div>
+</div>
+<button class="text-tertiary hover:text-on-surface" onclick="closePatientDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content -->
+<div class="p-space-lg flex-1 overflow-y-auto flex flex-col gap-space-lg">
+<!-- Key Specs -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-xl font-body-sm text-body-sm">
+<div>
+<span class="font-label-sm text-label-sm text-tertiary block">Acuity Tier:</span>
+<span class="font-semibold text-primary" id="drawer-acuity">Level 3 – Critical</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary block">Arrival Time:</span>
+<span class="font-metric-tabular text-on-surface" id="drawer-arrival">12:42</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary block">Waiting Time:</span>
+<span class="font-metric-tabular font-bold text-on-surface" id="drawer-wait">18 minutes</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary block">Priority Weight:</span>
+<span class="font-metric-tabular font-bold text-primary" id="drawer-weight">8.0</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary block">Required Bed:</span>
+<span class="font-semibold text-on-surface" id="drawer-required">Critical</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-tertiary block">Queue Status:</span>
+<span class="font-bold text-[#92400E]" id="drawer-status">Waiting</span>
+</div>
+</div>
+<!-- Vertical Timeline -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">CareFlow Event Timeline</span>
+<div class="relative pl-6 flex flex-col gap-space-md before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Event 1 -->
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-metric-tabular">12:42</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Arrived at Triage</span>
+<span class="font-label-sm text-label-sm text-tertiary">Assessed by Dr. Sarah Lin (Acuity L3 diagnosed)</span>
+</div>
+<!-- Event 2 -->
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-metric-tabular">12:45</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Enqueued in CareFlow Engine</span>
+<span class="font-label-sm text-label-sm text-tertiary">Priority score computed: 144 (Weight: 8 × Wait: 18m)</span>
+</div>
+<!-- Event 3 -->
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-[#065F46] ring-4 ring-surface-container-lowest"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-metric-tabular">12:55</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Bed C-03 Sanitation Completed</span>
+<span class="font-label-sm text-label-sm text-tertiary">Housekeeping cleared critical isolation chamber</span>
+</div>
+<!-- Event 4 -->
+<div class="relative flex flex-col">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-metric-tabular">13:00</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Algorithm Proposed Allocation</span>
+<span class="font-label-sm text-label-sm text-tertiary">Dispatched allocation packet to Nurse Supervisor</span>
+</div>
+<!-- Event 5 Pending -->
+<div class="relative flex flex-col opacity-60">
+<span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-outline ring-4 ring-surface-container-lowest"></span>
+<span class="font-label-sm text-label-sm text-tertiary">Pending Dispatch</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Admitted &amp; Charted to Bed</span>
+<span class="font-label-sm text-label-sm text-tertiary">Awaiting physical transport completion</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md bg-surface-container-low flex justify-end gap-space-xs">
+<button class="bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-space-sm rounded-xl transition-colors" onclick="closePatientDrawer()">
+            Close Drawer
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- ========================================================================= -->
+<!-- MODAL: QUICK CLINICAL STAFF LOGIN / AUTH SWITCH -->
+<!-- ========================================================================= -->
+<div class="hidden fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md" id="staff-auth-modal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-sm w-full p-space-lg flex flex-col gap-space-md animate-in fade-in zoom-in-95">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Duty Roster Switch</span>
+</div>
+<button class="text-tertiary hover:text-on-surface" onclick="closeStaffModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary">Select operational identity for telemetry authorization:</p>
+<div class="flex flex-col gap-space-xs">
+<button class="p-space-sm rounded-xl bg-secondary-fixed text-left flex items-center justify-between hover:bg-secondary-fixed-dim transition-colors" onclick="setStaffRole('Dr. Sarah Lin', 'Triage Operations')">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-secondary-fixed font-bold">Dr. Sarah Lin</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant">Triage Operations Supervisor</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-low text-left flex items-center justify-between hover:bg-surface-container-high transition-colors" onclick="setStaffRole('Nurse Miller, RN', 'ICU Charge Nurse')">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Nurse Miller, RN</span>
+<span class="font-label-sm text-label-sm text-tertiary">ICU Bed Coordinator</span>
+</div>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-low text-left flex items-center justify-between hover:bg-surface-container-high transition-colors" onclick="setStaffRole('Dr. Alex Chen', 'Chief Medical Officer')">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Dr. Alex Chen</span>
+<span class="font-label-sm text-label-sm text-tertiary">Hospital Command Director</span>
+</div>
+</button>
+</div>
+</div>
+</div><!-- SIMULATE PATIENT ARRIVAL MODAL -->
+<div class="hidden fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md" id="arrival-modal">
+  <div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-md w-full p-space-lg flex flex-col gap-space-md animate-in fade-in zoom-in-95">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-space-xs">
+        <span class="material-symbols-outlined text-primary text-[20px]">person_add</span>
+        <span class="font-headline-sm text-headline-sm text-on-surface font-bold">Simulate Patient Arrival</span>
+      </div>
+      <button class="text-tertiary hover:text-on-surface" onclick="closeArrivalModal()">
+        <span class="material-symbols-outlined text-[18px]">close</span>
+      </button>
+    </div>
+    <form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); submitPatientArrival();">
+      <div class="flex flex-col gap-1">
+        <label class="font-label-sm text-label-sm text-tertiary uppercase">Patient ID</label>
+        <input class="h-9 px-space-sm rounded bg-surface-container-low text-on-surface font-metric-tabular focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="arrival-patient-id" readonly="" type="text" value="P-00426">
+      </div>
+      <div class="flex flex-col gap-1">
+        <label class="font-label-sm text-label-sm text-tertiary uppercase">Acuity Tier</label>
+        <select class="h-9 px-space-sm rounded bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="arrival-patient-acuity">
+          <option value="3">Level 3 – Critical (Weight: 8x, ICU only)</option>
+          <option selected="" value="2">Level 2 – Urgent (Weight: 3x, Monitored/ICU)</option>
+          <option value="1">Level 1 – Standard (Weight: 1x, General/Mon/Crit)</option>
+        </select>
+      </div>
+      <div class="flex flex-col gap-1">
+        <label class="font-label-sm text-label-sm text-tertiary uppercase">Initial Wait Time (minutes)</label>
+        <input class="h-9 px-space-sm rounded bg-surface-container-low text-on-surface font-metric-tabular focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="arrival-patient-wait" min="0" type="number" value="2">
+      </div>
+      <div class="flex items-center justify-end gap-space-sm pt-space-xs">
+        <button class="bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-space-sm rounded-xl transition-colors" onclick="closeArrivalModal()" type="button">Cancel</button>
+        <button class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-space-lg py-space-sm rounded-xl transition-all shadow-sm" type="submit">Enqueue Patient</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- BED DETAILS INSPECTION MODAL -->
+<div class="hidden fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-space-md" id="bed-inspect-modal">
+  <div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-lg w-full overflow-hidden flex flex-col animate-in fade-in zoom-in-95">
+    <div class="bg-surface-container-low px-space-lg py-space-md flex items-center justify-between">
+      <div class="flex items-center gap-space-sm">
+        <span class="material-symbols-outlined text-primary text-[20px]">hotel</span>
+        <span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="bed-modal-title">Ward Capacity Details</span>
+      </div>
+      <button class="text-tertiary hover:text-on-surface" onclick="closeBedInspectModal()">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <div class="p-space-lg flex flex-col gap-space-md">
+      <div class="grid grid-cols-3 gap-space-sm text-center">
+        <div class="bg-surface-container-low p-space-sm rounded-xl">
+          <span class="font-label-sm text-label-sm text-tertiary uppercase block">Total Beds</span>
+          <span class="font-headline-md text-headline-md font-bold text-on-surface font-metric-tabular" id="bed-modal-total">30</span>
+        </div>
+        <div class="bg-surface-container-low p-space-sm rounded-xl">
+          <span class="font-label-sm text-label-sm text-tertiary uppercase block">Occupied</span>
+          <span class="font-headline-md text-headline-md font-bold text-primary font-metric-tabular" id="bed-modal-occupied">21</span>
+        </div>
+        <div class="bg-surface-container-low p-space-sm rounded-xl">
+          <span class="font-label-sm text-label-sm text-tertiary uppercase block">Available</span>
+          <span class="font-headline-md text-headline-md font-bold text-[#065F46] font-metric-tabular" id="bed-modal-avail">9</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-space-xs">
+        <span class="font-label-sm text-label-sm text-tertiary uppercase">Allocation Compatibility Policy:</span>
+        <p class="font-body-sm text-body-sm text-on-surface" id="bed-modal-policy">Patients with matching acuity or lower (via upward flexibility) may be charted to this ward.</p>
+      </div>
+    </div>
+    <div class="bg-surface-container-low px-space-lg py-space-sm flex justify-end">
+      <button class="bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-space-sm rounded-xl transition-colors" onclick="closeBedInspectModal()">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- COMPREHENSIVE INTERACTIVE JAVASCRIPT LOGIC -->
+<script>
+  // Global Operational State
+  const state = {
+    totalBeds: 45,
+    occupiedBeds: 32,
+    waitingCount: 8,
+    rejectedCount: 5,
+    criticalWaiting: 1,
+    beds: {
+      general: { total: 30, occupied: 21, avail: 9 },
+      monitored: { total: 10, occupied: 8, avail: 2 },
+      critical: { total: 5, occupied: 3, avail: 2 }
+    },
+    activeModalPatient: null
+  };
+
+  // Toast Notification Trigger
+  function showToast(message, type = 'info') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = `pointer-events-auto flex items-center gap-space-sm px-space-md py-space-sm rounded-xl shadow-lg transition-all transform translate-y-2 opacity-0 duration-200 ${
+      type === 'success' 
+        ? 'bg-[#065F46] text-white' 
+        : type === 'critical'
+        ? 'bg-primary text-on-primary'
+        : 'bg-inverse-surface text-inverse-on-surface'
+    }`;
+    
+    toast.innerHTML = `
+      <span class="material-symbols-outlined text-[18px]">${type === 'success' ? 'check_circle' : 'info'}</span>
+      <span class="font-label-md text-label-md">${message}</span>
+    `;
+
+    container.appendChild(toast);
+
+    // Animate in
+    requestAnimationFrame(() => {
+      toast.classList.remove('translate-y-2', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+    });
+
+    // Fade and remove
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-2');
+      setTimeout(() => toast.remove(), 250);
+    }, 4000);
+  }
+
+  // Switch Main Dynamic Tabs
+  function switchTab(tabId) {
+    const tabs = ['dashboard', 'simulator', 'analytics', 'decision-log'];
+    tabs.forEach(t => {
+      const section = document.getElementById(`tab-${t}`);
+      const btn = document.querySelector(`[data-tab-btn="${t}"]`);
+      if (section) {
+        if (t === tabId) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      }
+      if (btn) {
+        if (t === tabId) {
+          btn.className = 'flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed font-semibold transition-all';
+        } else {
+          btn.className = 'flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low transition-all';
+        }
+      }
+    });
+  }
+
+  // Open Allocation Confirmation Modal
+  function openAllocateModal(patientId, acuity, wait, required, compCapacity, weight, avail, recAction) {
+    state.activeModalPatient = { patientId, acuity, required };
+    
+    document.getElementById('modal-patient-id').textContent = patientId;
+    document.getElementById('modal-patient-acuity').textContent = acuity;
+    document.getElementById('modal-waiting-time').textContent = wait;
+    document.getElementById('modal-priority-weight').textContent = `${weight} Tier`;
+    document.getElementById('modal-required-bed').textContent = required;
+    document.getElementById('modal-compatible-capacity').textContent = compCapacity;
+    document.getElementById('modal-crit-avail').textContent = `${avail} Beds Ready`;
+    document.getElementById('modal-rec-action').textContent = recAction.toUpperCase();
+
+    const modal = document.getElementById('allocation-modal');
+    modal.classList.remove('hidden');
+  }
+
+  function closeAllocateModal() {
+    document.getElementById('allocation-modal').classList.add('hidden');
+  }
+
+  // Confirm Allocation Action
+  function confirmAllocationAction() {
+    if (!state.activeModalPatient) return;
+    const { patientId, required } = state.activeModalPatient;
+
+    // Bed identifier
+    let bedPrefix = 'C-03';
+    if (required.toLowerCase().includes('critical')) {
+      bedPrefix = 'Critical Bed C-03';
+      if (state.beds.critical.avail > 0) {
+        state.beds.critical.occupied += 1;
+        state.beds.critical.avail -= 1;
+      }
+    } else if (required.toLowerCase().includes('monitored')) {
+      bedPrefix = 'Monitored Bed M-09';
+      if (state.beds.monitored.avail > 0) {
+        state.beds.monitored.occupied += 1;
+        state.beds.monitored.avail -= 1;
+      }
+    } else {
+      bedPrefix = 'General Bed G-22';
+      if (state.beds.general.avail > 0) {
+        state.beds.general.occupied += 1;
+        state.beds.general.avail -= 1;
+      }
+    }
+
+    // Update KPIs
+    state.occupiedBeds = Math.min(45, state.occupiedBeds + 1);
+    state.waitingCount = Math.max(0, state.waitingCount - 1);
+    if (patientId === 'P-00421') {
+      state.criticalWaiting = 0;
+    }
+
+    renderKPIs();
+
+    // Remove row from UI table
+    const row = document.getElementById(`row-${patientId}`);
+    if (row) {
+      row.style.opacity = '0.3';
+      row.style.pointerEvents = 'none';
+      setTimeout(() => {
+        row.remove();
+        updateQueueCountBadge();
+      }, 300);
+    }
+
+    // Prepend to audit log
+    const now = new Date();
+    const timeString = now.toTimeString().split(' ')[0];
+    const logBody = document.getElementById('audit-table-body');
+    if (logBody) {
+      const newTr = document.createElement('tr');
+      newTr.className = 'hover:bg-surface-container-low transition-colors bg-[#ECFDF5]/40';
+      newTr.innerHTML = `
+        <td class="py-space-sm px-space-md font-metric-tabular text-tertiary">${timeString}</td>
+        <td class="py-space-sm px-space-sm font-metric-tabular font-bold text-on-surface">${patientId}</td>
+        <td class="py-space-sm px-space-sm"><span class="bg-primary text-on-primary px-space-xs py-0.5 rounded font-label-sm text-label-sm font-semibold">L3</span></td>
+        <td class="py-space-sm px-space-sm"><span class="bg-[#ECFDF5] text-[#065F46] px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold">ALLOCATED</span></td>
+        <td class="py-space-sm px-space-sm font-semibold text-primary">${bedPrefix}</td>
+        <td class="py-space-sm px-space-sm font-metric-tabular">Just now</td>
+        <td class="py-space-sm px-space-sm text-right font-metric-tabular">${state.beds.general.avail}</td>
+        <td class="py-space-sm px-space-sm text-right font-metric-tabular">${state.beds.monitored.avail}</td>
+        <td class="py-space-sm px-space-md text-right font-metric-tabular font-bold text-primary">${state.beds.critical.avail}</td>
+      `;
+      logBody.insertBefore(newTr, logBody.firstChild);
+    }
+
+    closeAllocateModal();
+    showToast(`${patientId} allocated to ${bedPrefix}`, 'success');
+  }
+
+  function updateQueueCountBadge() {
+    const table = document.getElementById('patient-table-body');
+    const badge = document.getElementById('table-badge-count');
+    if (table && badge) {
+      const remainingRows = table.querySelectorAll('tr').length;
+      badge.textContent = `${remainingRows} In Primary Roster`;
+    }
+  }
+
+  function renderKPIs() {
+    document.getElementById('kpi-occupied-beds').textContent = state.occupiedBeds;
+    document.getElementById('kpi-waiting-count').textContent = state.waitingCount;
+    document.getElementById('kpi-critical-waiting').textContent = state.criticalWaiting;
+
+    const occPercent = Math.round((state.occupiedBeds / state.totalBeds) * 100);
+    const bar = document.getElementById('kpi-occupied-bar');
+    if (bar) bar.style.width = `${occPercent}%`;
+
+    // Capacity cards
+    document.getElementById('cap-gen-occupied').textContent = state.beds.general.occupied;
+    document.getElementById('cap-gen-avail').textContent = state.beds.general.avail;
+    document.getElementById('bar-gen-fill').style.width = `${Math.round((state.beds.general.occupied / state.beds.general.total)*100)}%`;
+
+    document.getElementById('cap-mon-occupied').textContent = state.beds.monitored.occupied;
+    document.getElementById('cap-mon-avail').textContent = state.beds.monitored.avail;
+    document.getElementById('bar-mon-fill').style.width = `${Math.round((state.beds.monitored.occupied / state.beds.monitored.total)*100)}%`;
+
+    document.getElementById('cap-crit-occupied').textContent = state.beds.critical.occupied;
+    document.getElementById('cap-crit-avail').textContent = state.beds.critical.avail;
+    document.getElementById('bar-crit-fill').style.width = `${Math.round((state.beds.critical.occupied / state.beds.critical.total)*100)}%`;
+  }
+
+  // Open & Close Patient Drawer
+  function openPatientDrawer(id, acuity, arrival, wait, required, comp, weight, status) {
+    document.getElementById('drawer-patient-id').textContent = id;
+    document.getElementById('drawer-acuity').textContent = acuity;
+    document.getElementById('drawer-arrival').textContent = arrival;
+    document.getElementById('drawer-wait').textContent = wait;
+    document.getElementById('drawer-weight').textContent = weight;
+    document.getElementById('drawer-required').textContent = required;
+    document.getElementById('drawer-status').textContent = status;
+
+    document.getElementById('patient-drawer').classList.remove('hidden');
+  }
+
+  function closePatientDrawer() {
+    document.getElementById('patient-drawer').classList.add('hidden');
+  }
+
+  // Staff Modal
+  function openStaffModal() {
+    document.getElementById('staff-auth-modal').classList.remove('hidden');
+  }
+
+  function closeStaffModal() {
+    document.getElementById('staff-auth-modal').classList.add('hidden');
+  }
+
+  function setStaffRole(name, role) {
+    closeStaffModal();
+    showToast(`Active staff switched to ${name} (${role})`, 'info');
+  }
+
+  // Hackathon Live Simulation Engine
+  function runSimulation() {
+    const progressBox = document.getElementById('sim-progress-box');
+    const progressBar = document.getElementById('sim-progress-bar');
+    const progressPercent = document.getElementById('sim-progress-percent');
+    const progressLabel = document.getElementById('sim-progress-label');
+    const completeBanner = document.getElementById('sim-complete-banner');
+    const runBtn = document.getElementById('sim-run-btn');
+
+    progressBox.classList.remove('hidden');
+    progressBox.classList.add('flex');
+    completeBanner.classList.add('hidden');
+    completeBanner.classList.remove('flex');
+    runBtn.disabled = true;
+    runBtn.classList.add('opacity-50');
+
+    let current = 0;
+    const stages = [
+      "Generating stochastic arrival streams (Seed: 20260911)...",
+      "Evaluating non-eviction throughput invariants...",
+      "Balancing step-down telemetry reservations...",
+      "Synthesizing wait utility matrices...",
+      "Finalizing benchmark run metrics..."
+    ];
+
+    const timer = setInterval(() => {
+      current += 4;
+      progressBar.style.width = `${current}%`;
+      progressPercent.textContent = `${current}%`;
+
+      const stageIdx = Math.min(stages.length - 1, Math.floor((current / 100) * stages.length));
+      progressLabel.textContent = stages[stageIdx];
+
+      if (current >= 100) {
+        clearInterval(timer);
+        setTimeout(() => {
+          progressBox.classList.add('hidden');
+          completeBanner.classList.remove('hidden');
+          completeBanner.classList.add('flex');
+          runBtn.disabled = false;
+          runBtn.classList.remove('opacity-50');
+          showToast('Discrete-event simulation run successfully completed', 'success');
+        }, 300);
+      }
+    }, 45);
+  }
+
+  function resetSimulationForm() {
+    document.getElementById('sim-seed').value = 20260911;
+    document.getElementById('sim-arrivals').value = 500;
+    document.getElementById('sim-interarrival').value = 2.5;
+    document.getElementById('sim-complete-banner').classList.add('hidden');
+    showToast('Simulator parameters reset to default configuration', 'info');
+  }
+
+  // Top Bar Action: Batch Dispatch Next
+  function triggerAutoAllocation() {
+    const firstRowBtn = document.querySelector('#patient-table-body tr button');
+    if (firstRowBtn) {
+      firstRowBtn.click();
+    } else {
+      showToast('All primary waiting queue patients currently allocated.', 'info');
+    }
+  }
+
+  // Filter Decision Audit Log
+  function filterLogTable() {
+    const input = document.getElementById('log-search');
+    const filter = input.value.toUpperCase();
+    const rows = document.getElementById('audit-table-body').getElementsByTagName('tr');
+
+    for (let i = 0; i < rows.length; i++) {
+      const patientCell = rows[i].getElementsByTagName('td')[1];
+      if (patientCell) {
+        const textValue = patientCell.textContent || patientCell.innerText;
+        if (textValue.toUpperCase().indexOf(filter) > -1) {
+          rows[i].style.display = "";
+        } else {
+          rows[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+  // Export CSV Action
+  function exportCSVLog() {
+    const rows = [
+      ["Timestamp", "PatientID", "Acuity", "Action", "BedAssigned", "WaitTime", "GenLeft", "MonLeft", "CritLeft"],
+      ["12:42:18", "P-00421", "L3", "ADMITTED", "Critical C-03", "18m", "9", "2", "1"],
+      ["12:44:02", "P-00422", "L2", "ADMITTED", "Monitored M-08", "16m", "9", "1", "1"],
+      ["12:47:11", "P-00423", "L1", "WAITING", "None", "13m", "9", "1", "1"],
+      ["12:35:44", "P-00420", "L1", "ADMITTED", "General G-14", "22m", "10", "2", "2"]
+    ];
+    let csvContent = "data:text/csv;charset=utf-8," + rows.map(e => e.join(",")).join("\n");
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "CareFlow_Bed_Audit_Log.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    showToast("Audit log CSV exported successfully", "success");
+  }
+
+  // Sync Sidebar active links
+  document.addEventListener('DOMContentLoaded', () => {
+    const sidebarLinks = document.querySelectorAll('aside nav a');
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const path = link.getAttribute('data-path');
+        if (path === 'bed-allocation-overview' || path === 'waiting-patients' || path === 'bed-capacity') {
+          switchTab('dashboard');
+        } else if (path === 'hackathon-simulator') {
+          switchTab('simulator');
+        } else if (path === 'scoring-and-judging-metrics') {
+          switchTab('analytics');
+        } else if (path === 'decision-log') {
+          switchTab('decision-log');
+        }
+      });
+    });
+  });
+</script></main></div>
+
+
+
+</body></html>

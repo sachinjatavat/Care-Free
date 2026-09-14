@@ -1,0 +1,29 @@
+# Environment files (Contains API keys and secret tokens - NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+*.env
+
+# SQLite Database
+*.db
+careflow.db
+
+# Python & Pytest
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Node & Frontend
+node_modules/
+dist/
+build/
+
+# IDE & Operating System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
