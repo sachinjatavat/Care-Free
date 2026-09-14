@@ -6,6 +6,20 @@ CareFlow is an event-driven clinical command center and online bed allocation sy
 
 ---
 
+## 📸 System Screenshots & Interface Preview
+
+<div align="center">
+
+### 🏥 Bed Allocation Command Center
+![CareFlow Bed Allocation System](docs/images/bed_allocation_dashboard.png)
+
+### 📋 Live Waiting Patients Priority Queue
+![CareFlow Waiting Patients Queue](docs/images/waiting_patients_queue.png)
+
+</div>
+
+---
+
 ## 🌟 Key Features
 
 - **🏥 Real-Time Bed Allocation & Tracking**: Live monitoring across 45 beds divided into 3 specialized care tiers:

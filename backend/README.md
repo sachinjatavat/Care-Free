@@ -6,6 +6,17 @@ CareFlow is an event-driven clinical command center backend for hospital bed all
 
 ---
 
+## 📸 System Interface Preview
+
+<div align="center">
+
+### 🏥 Clinical Command Center & Bed Occupancy Dashboard
+![CareFlow Bed Allocation System](../docs/images/bed_allocation_dashboard.png)
+
+</div>
+
+---
+
 ## 🚀 Quick Start
 
 ### 1. Installation
